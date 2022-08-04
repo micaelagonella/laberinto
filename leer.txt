@@ -1,18 +1,18 @@
-LABERINTO
 
 Header
-Top header
-Banner → Social (link a tripadvisor)+ descripción producto + botón shop + idiomas (ing, esp)
-Menu nav
-Menú bottom sticky
+    	Top header
+            Banner → Social (y link a tripadvisor) + idiomas (ing, esp)
+        Bottom header
+            Menú nav bottom y sticky
 
 Main
-Intro al laberinto → descripcion de la finca + button a historia.html 
-Servicios → fotos y descripción de cada uno de los atractivos del lugar
-Agenda → botón a agenda.html
-Mapa 
-Contacto → form + pop-up whatsapp
+    Intro al laberinto →  descripción + button a historia.html 
+    Servicios → fotos y descripción de cada uno de los atractivos del lugar
+    Agenda → button a agenda.html
+    Mapa 
+    Contacto → form + pop-up whatsapp
 
 Footer 
+    a desarrollar
 
 Mantenimiento → actualizar la info (horarios, precios, nuevos eventos, cartas té, restaurant)
