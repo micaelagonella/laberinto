@@ -101,7 +101,12 @@ body {
 }
 @media (max-width: 480px) {
   .banner .logo img {
-    width: 40%;
+    width: 80%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .banner .logo img {
+    width: 44%;
   }
 }
 @media (max-width: 769px) {

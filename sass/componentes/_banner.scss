@@ -45,7 +45,10 @@
             width: 25%;
             margin-bottom: 3%;
             @media (max-width: 480px) {
-                width: 40%;
+                width: 80%;
+            }
+            @media (min-width: 481px) and (max-width: 768px) {
+                width: 44%;
             }
         }
     }
