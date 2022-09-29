@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+.banner{
+    padding: 5% 8%;
+    // position: absolute;
+    // left: calc(50% - 438px/2);
+    // top: calc(50% - 238px/2);
+    display: flex;
+    // flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    .sentidos{
+        .p1{
+            font-family: 'Libre Baskerville', serif;
+            font-family: 'Poiret One', cursive;
+            color: #D0CCB3;
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        
+    }
+
+}
+.logo {
+    img{
+        width: 270px;
+    }
+    
+}
+.p2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+    color: #D0CCB3;
+}
+    

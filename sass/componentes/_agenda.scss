@@ -1,0 +1,105 @@
+.carousel-inner{
+    height: 100vh;
+    background: $color-secundario;
+    .carousel-item{
+        height: inherit;
+        .shadow-layer{
+            z-index: 0;
+        }
+      img{
+            height: 75%;
+            margin: auto;
+
+        }
+        .w-100{
+            width: auto!important;
+            
+        }
+        .carousel-caption{
+            right: 2%;
+            left: 2%;
+            
+            padding: 0% 15%;
+            h5{
+                font-family: titulos;
+                color: $color-primario;
+                font-weight: 600;
+                font-size: xxx-large;
+            }
+            p{
+                font-family: body;
+                font-size: 1.2rem;
+                color: grey;
+            }
+            @media screen and (min-width: 772px) and (max-width: 1024px) { //tablet
+                padding: 1rem 7rem;
+                h5{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+            
+            @media screen and (max-width: 772px) { //mobile 
+                padding: 10px;
+                h5{
+                    font-size: 17px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+.carousel-control-prev, .carousel-control-next{
+    opacity: inherit;
+    width: 8%;
+    .carousel-control-prev-icon,.carousel-control-next-icon{
+        border:transparent solid 3px;
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        transition: all .3s ease-in;
+        &:hover{
+            border:white solid 2px;
+        
+        }
+    }
+}
+
+
+// .gallery{
+//     background-color: $color-secundario;
+//     height: 100vh;
+//     width: 100vw;
+//     display: flex;
+//     overflow: auto;
+//     // scroll-snap-type: x mandatory;
+//     // scroll-snap-align: center;
+//     div{
+//         flex-shrink: 0;
+//         object-fit: cover;
+//         position: sticky;
+//         top: 0px;
+//         // height: 100%;
+//         // width: 100%;
+//         img{
+//             height: 82%;
+//             width: 72%;
+//             display: flex;
+//             align-items: center;
+//         }
+//         .descripcion{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: flex-end;
+//             background-color: $color-secundario;
+//             color: $color-primario
+//         }
+//     }
+
+// }
