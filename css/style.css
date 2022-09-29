@@ -337,7 +337,7 @@ header .images .scaling {
 }
 
 .intro {
-  background-image: url("../../media/fondo.png");
+  background-image: url("../media/fondo.png");
   background-size: contain;
   width: 100%;
   height: 100%;
