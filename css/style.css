@@ -586,16 +586,10 @@ footer .contenedor-footer-info .info ul {
   list-style-type: none;
   margin: 0 11%;
 }
-@media (max-width: 560px) {
+@media (max-width: 992px) {
   footer .contenedor-footer-info .info ul {
-    width: 64%;
-    margin: 0% 5% 0% 6%;
-  }
-}
-@media (min-width: 561px) and (max-width: 993px) {
-  footer .contenedor-footer-info .info ul {
-    width: 38%;
-    margin: 1% 0% 0% 0%;
+    width: 87%;
+    margin: 0% 2% 0% 15%;
   }
 }
 footer .contenedor-footer-info .info ul li div {
@@ -621,7 +615,7 @@ footer .contenedor-footer-info .redes {
 }
 @media (max-width: 992px) {
   footer .contenedor-footer-info .redes {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 footer .contenedor-footer-info .redes a {

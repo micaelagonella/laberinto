@@ -34,14 +34,14 @@ footer{
                         ul {
                             list-style-type: none;
                             margin: 0 11%;
-                            @media (max-width: 560px)  {
-                                width: 64%;
-                                margin: 0% 5% 0% 6%;
+                            @media (max-width: 992px)  {
+                                width: 87%;
+                                margin: 0% 2% 0% 15%;
                             }
-                            @media (min-width: 561px) and (max-width: 993px) {
-                                width: 38%;
-                                margin: 1% 0% 0% 0%;
-                            }
+                            // @media (min-width: 561px) and (max-width: 993px) {
+                            //     width: 38%;
+                            //     margin: 1% 0% 0% 0%;
+                            // }
                             li{
                                 div{
                                     display: flex;
@@ -67,7 +67,7 @@ footer{
                         align-content: space-around;
                         margin: 5% 11%;
                         @media (max-width: 992px) {
-                            justify-content: center;
+                            justify-content: space-between;
                         }
                         a{
                             display: contents;
