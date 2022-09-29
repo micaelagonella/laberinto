@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @font-face {
   font-family: titulos;
-  src: url("tipografias/TrajanPro-Regular.otf");
+  src: url("/index.html/tipografias/TrajanPro-Regular.otf");
 }
 @font-face {
   font-family: body;
-  src: url("tipografias/GARA.TTF");
+  src: url("/index.html/tipografias/GARA.TTF");
 }
 @font-face {
   font-family: frases;
-  src: url("tipografias/Austhina Brush Calligraphy Scratch .ttf");
+  src: url("/index.html/tipografias/Austhina Brush Calligraphy Scratch .ttf");
 }
 * {
   margin: 0;
@@ -249,7 +249,7 @@ header .images .title h1 {
   font-size: 6rem !important;
 }
 header .images .scaling {
-  background-image: url("../../media/Aereas 4.jpg");
+  background-image: url("/media/Aereas 4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
