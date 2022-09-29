@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
 .banner{
-    padding: 5% 8%;
+    padding: 2% 8%;
     // position: absolute;
     // left: calc(50% - 438px/2);
     // top: calc(50% - 238px/2);
@@ -9,28 +9,50 @@
     align-items: center;
     justify-content: space-between;
     z-index: 99;
+
     .sentidos{
         .p1{
             font-family: 'Libre Baskerville', serif;
-            font-family: 'Poiret One', cursive;
+            font-family: frases;
             color: #D0CCB3;
             font-size: 3.5em;
-            font-weight: bold;
+            @media(max-width: 992px)  {
+                font-size: 2.3rem;
+            }
+            
         }
-        
+        .p2{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Poiret One', cursive;
+            font-size: 1.5em;
+            color: #D0CCB3;
+            @media (min-width: 769px) and (max-width: 992px) {
+                font-size: 23px;
+            }
+            @media (max-width: 480px) {
+                font-size: 19px;
+            }
+        }
+        @media (max-width: 769px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
+    .logo {
+        display: contents;
+        img{
+            width: 25%;
+            margin-bottom: 3%;
+            @media (max-width: 480px) {
+                width: 40%;
+            }
+        }
+    }
+    @media (max-width: 769px) {
+        flex-direction: column;
+    }
+}
 
-}
-.logo {
-    img{
-        width: 270px;
-    }
-    
-}
-.p2{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-family: 'Poiret One', cursive;
-    font-size: 1.5em;
-    color: #D0CCB3;
-}
+
     
