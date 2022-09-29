@@ -388,9 +388,14 @@ header .images .scaling {
   font-size: 1.2rem;
   padding-top: 5%;
 }
+@media all and (max-width: 480px) {
+  .intro .intro-container p {
+    text-align: justify;
+  }
+}
 @media all and (max-width: 992px) {
   .intro .intro-container p {
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 .intro .intro-container .fontTitulo {
@@ -398,7 +403,7 @@ header .images .scaling {
 }
 @media all and (max-width: 992px) {
   .intro .intro-container .fontTitulo {
-    font-size: 19px;
+    font-size: 24px;
   }
 }
 @media all and (max-width: 992px) {
