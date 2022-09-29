@@ -21,7 +21,7 @@
         display: flex;
         --bs-gutter-x: none;
         @media screen and (max-width: 992px) {
-            height: 72vh;
+            height: 91h;
         }
         &:nth-child(even){
             .espacios-descripcion{
@@ -47,11 +47,9 @@
                 height: 100vh;
                 object-fit: cover;
                 box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
-                @media screen and (max-width: 480px) {
-                    height: 50vh;
-                }
                 @media screen and (max-width: 992px) {
-                    height: 50vh;
+                    height: 63vh;
+                    box-shadow: none;
                 }
             }
             h2, h3{
@@ -85,10 +83,10 @@
                 text-align: center;
                 padding: 4%;
                 #fontTitulo{
-                    font-size: 17px;
+                    font-size: 24px;
                 }
                 p{
-                    font-size: 13px;
+                    font-size: 17px;
                 }
             }
         }
