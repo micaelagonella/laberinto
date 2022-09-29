@@ -87,10 +87,18 @@
             font-size: 1em;
             color: #D0CCB3;
             margin: 0% 5px;
+            @media all and (max-width: 992px) {
+                margin: 0 20px;
+            }
         }
         img{
             height: 1rem;
             margin-top: -5%;
+            @media all and (max-width: 992px) {
+                vertical-align: baseline ;
+                padding-top: 1%;
+                margin: 0 20px;
+            }
         }
     }
 
@@ -132,10 +140,11 @@
         .btn {
             display: none; //no quiero q sea vea el boton desktop
             position: absolute; // le doy absolute para q no rompa en resp
-            width: 56px;
+            width: 33px;
             height: 43px;
             right: 2.5rem;
             top: 1.2rem;
+            padding: 0;
             cursor: pointer;
 
 

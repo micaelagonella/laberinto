@@ -137,9 +137,21 @@ body {
   color: #D0CCB3;
   margin: 0% 5px;
 }
+@media all and (max-width: 992px) {
+  .menu-nav .social a i {
+    margin: 0 20px;
+  }
+}
 .menu-nav .social img {
   height: 1rem;
   margin-top: -5%;
+}
+@media all and (max-width: 992px) {
+  .menu-nav .social img {
+    vertical-align: baseline;
+    padding-top: 1%;
+    margin: 0 20px;
+  }
 }
 .menu-nav ul {
   display: flex;
@@ -171,10 +183,11 @@ body {
 .menu-nav label .btn {
   display: none;
   position: absolute;
-  width: 56px;
+  width: 33px;
   height: 43px;
   right: 2.5rem;
   top: 1.2rem;
+  padding: 0;
   cursor: pointer;
   /*fin boton burguer*/
 }
