@@ -2,17 +2,17 @@
 footer{
     background-color: $color-primario;
     color: $color-secundario;
-    .contenedor-footer-info{
+    .ubicacion-contacto{
         display: flex;
         @media (max-width: 992px) {
             flex-direction: column;
         }
             .contact-left{
                     width: 50%;
+                    padding-top: 6%;
                     @media (max-width: 992px) {
                             width: 100%;
                         }
-                    }
                     .info{
                         @media (max-width: 992px) {
                             flex-direction: column;
@@ -20,28 +20,33 @@ footer{
                             justify-content: center;
                             width: 100%;
                         }
-                        .logo-footer{
-                            width: 60%;
-                            margin: 11%;
-                            @media (max-width: 992px) {
-                                width: 40%;
-                                margin: 5%;
+                        .ubicacion{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            h5{
+                                font-family: titulos;
+                                font-size: 2.25rem;
+                                margin-bottom: 3%;
+                                @media (max-width: 992px) {
+                                    font-size: 30px;
+                                }
                             }
-                            @media (max-width: 480px) {
-                                width: 54%
+                            iframe{
+                                width: 74%;
+                                height: 100%;
+                                padding-bottom: 6%;
                             }
                         }
                         ul {
                             list-style-type: none;
-                            margin: 0 11%;
+                            margin: 0 7%;
                             @media (max-width: 992px)  {
-                                width: 87%;
-                                margin: 0% 2% 0% 15%;
+                                margin: 0 9%;
                             }
-                            // @media (min-width: 561px) and (max-width: 993px) {
-                            //     width: 38%;
-                            //     margin: 1% 0% 0% 0%;
-                            // }
+                            @media (max-width: 480px)  {
+                                margin: 0 13% 0 6%;
+                            }
                             li{
                                 div{
                                     display: flex;
@@ -60,65 +65,8 @@ footer{
                             }
                         }
                     }
-                    .redes{
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        align-content: space-around;
-                        margin: 5% 11%;
-                        @media (max-width: 992px) {
-                            justify-content: space-between;
-                        }
-                        a{
-                            display: contents;
-                            i{
-                                display: block;
-                                font-size: 15px;
-                                margin: 0 12%;
-                                display: block;
-                                color: white;
-                            }
-                            img{
-                                display: block;
-                                width: 2rem;
-                                color: white;
-                                margin: 0 8%;
-                            }
-                        }
-                    }
-
-                        
-                    .contenedor-footer-menu{
-                        margin: 0 11%;
-                        .menu{
-                            text-align: center;
-                            display: contents;
-                            @media (max-width: 992px) {
-                                display: block;;
-                            }
-                            ul{
-                                text-decoration: none;
-                                display: contents;
-                                li{
-                                    display: contents;
-                                    font-size: 15px;
-                                    font-weight: 300;
-                                    color: white;
-                                    a{
-                                        color: $color-secundario;
-                                        padding-right: 2%;
-                                        &:hover{
-                                            color: black;
-                                        }
-                                    }
-                                    
-                                }
-                            }
-                        }
-
-                    }
-
             }
+        
             .contact-right{
                 width: 50%;
                 padding-top: 6%;
@@ -131,18 +79,20 @@ footer{
                 }
                 h5{
                     font-family: titulos;
+                    font-size: 2.25rem;
                     margin-bottom: 3%;
+                    @media (max-width: 992px) {
+                        font-size: 30px;
+                    }
                 }
                 .form{
                     width: 71%;
                     .form-control{
                         font-size: 11px;
                         border: 1px solid #faf9f9;
-                        border-radius: 0%;
                         background: none;
                         font-weight: 300;
-                        margin-bottom: 10px;
-                        line-height: 0.5rem;
+                        margin-bottom: 13px;
                         &:focus {
                             border: 1px solid black!important;
                             outline: none!important;
@@ -165,29 +115,31 @@ footer{
                         border: 1px solid $color-primario;
                         background: #680d1c;
                     }
-                }
-                .ubicacion{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 71%;
-                    h5{
-                        font-family: titulos;
-                        margin-bottom: 3%;
+                    .btn:active:focus {
+                        box-shadow: none;
                     }
-                    iframe{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
+                
+            }
             }
     }
-
-    .derechos{
+    .logo-derechos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo-footer{
+        width: 22%;
+        @media (max-width: 992px) {
+            width: 40%;
+            margin: 5%;
+        }
+        @media (max-width: 480px) {
+            width: 54%
+        }
+        }
+        .derechos{
         font-family: body;
         padding: 2% 0;
         text-align: center;
+        }
     }
-
-
-
+}
