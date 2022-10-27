@@ -9,6 +9,7 @@
         background-color: $color-primario;
         text-align: center;
         z-index: 10;
+        opacity: .9;
         @media screen and (max-width: 772px) { //mobile 
             font-size: 30px;
         }
