@@ -1,0 +1,24 @@
+.simbologia{
+    background-color: bisque;
+    div{
+        height: 100vh;
+        width: 100vw;
+        h2{
+            font-weight: 600;
+            font-size: xxx-large;
+            margin-bottom: 1em;
+            font-family: titulos;
+            color: $color-primario;
+            text-transform: uppercase;
+        }
+        img{
+            height: 50%;
+            width: 30%;
+        }
+        p{
+            font-family: body;
+            color: grey;
+            font-size: 1.5rem;
+        }
+    }
+}

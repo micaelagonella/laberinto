@@ -11,7 +11,9 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../sass/css/historia.css">
+  <!-- Parallax -->
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
     <title>Historia</title>
 </head>
 <body>
@@ -24,58 +26,212 @@
 
     <main>
       
-      <section class="intro">
-        <h2>La historia del laberinto</h2>
-        <p>El primer monumento en su tipo realizado para recordar a Borges tal cual era su deseo:<br><br> <i><strong>"Quiero laureles verdes, reales, vivos, no esos de oro o metal" (Roma, 1984).</strong></i> </p>
-        <img id="image" class="image mirror" src="../media/historia/historia.jpg" alt="" width="80%" height="527.27"/>
+      <section class="intro-historia">  
+          <div class="intro-historia-texto">
+              <h2 id="fontTitulo">La historia del laberinto</h2>
+              <p>El primer monumento en su tipo realizado para recordar a Borges tal cual era su deseo:<br><br> <i><strong>"Quiero laureles verdes, reales, vivos, no esos de oro o metal" <br> (Roma, 1984).</strong></i> </p>
+          </div>
+          <img src="../media/historia/historia.jpg" alt="monumento laberinto" />
       </section>
 
-
-      <section class="georgie">
-        <h2>Georgie y Susana</h2>
-        <p>Fue el conocimiento que compartían sobre literatura inglesa lo que en un primer momento cubrió sus conversaciones. El interés y las charlas dieron paso a una amistad que duraría toda la vida. Una amistad profunda y de mutuo respeto. Por alguna extraña razón el que era tan admirado, esta vez admiraba.</p>
-        <p>Se reunian en la Quinta "San domenico" donde formaron un grupo de lectura de poemas y cuentos. Y en el departamento de Susana, en Recoleta, a tomar el te o almorzar.</p>
-        <img id="image" class="image mirror" src="../media/historia/Foto Laberinto 003.jpg" alt="" width="866.66" height="527.27"/>
-      </section>
-
-      <section class="coate">
-        <h2>El diseñador: Randoll Coate.</h2>
-        <p>Secretario de prensa de la Embajada Britanica en Argentina en los 50, asiduo lector, fanatico de borges y los laberintos. Amigo de Susana Bombal a quien le pidio conocer a Borges, quien intercedio en dicho encuentro.</p>
-        <p>Randoll al terminar su carrera diplomática devino en un muy prestigioso diseñador de laberintos para Castillos en toda Europa.</p>
-        <p>En el año 79 cuando él tiene un sueño revelador: El memorial de Borges “debía ser un Laberinto y no una estatua llena de angelitos”.Contó su sueño en una carta a Susana ya que ella aparecía en el sueño y algún papel debía jugar.</p>
-        <img id="image" class="image mirror" src="../media/historia/Aereas 15.jpg" alt="" width="866.66" height="527.27"/>
-      </section>
-
-
-      <section class="coate">
-        <h2>El impulsor: Camilo Aldao</h2>
-        <p>El mayor de 5 hermanos, una persona extraordinariamente instruida y fiel compañero y sobrino predilecto de Susana Bolbal. Para ella era el hijo que la vida le nego.</p>
-        <p>Al morir Susana en 1991, Camilo hereda sus cosas y en ese revisar sobre qué conservar y que no. Encontrando la carta de Randoll a Susana contándole su sueño de hacer un Laberinto. Camilo,que era muy místico y suceptible, tomó esto como un mensaje de Susana: <strong>El laberinto debía hacerse </strong></strong></p>
-        <p>Con esa idea escribe a Randoll y parte en avión a Londres a conocerlo personalmente. Allí Randoll le entrega el diseño con la esperanza y el mandato de que se realizara.</p>
-        <p>Luego de años, se contacta con <strong>María Kodama</strong> a quien le dona el diseño del laberinto en nombre de Coate. A este nuevo equipo se le suma <strong>Carlos Thays</strong> (nieto) quien lleva a cabo el diseño del master plan del Laberinto y juntos los tres intentan durante 10 años lograr plantarlo en algún lugar de la ciudad de Buenos Aires sin éxito</strong></p>
-        <p>Ya viviendo en San Rafael, Camilo relee el la carta de Randoll y comprende que el papel de Susana Bombal en el sueño. El Laberinto debia hacerse en <strong>Finca "Los Alamos" </strong> casa natal de Susana.</p>
-
-      </section>
-
-      <section class="laberinticos" >
-        <h2>Los Laberinticos</h2>
-        <p>En 1999, en un evento realizado en la Finca, Camilo conoce a Gabriel Mortarotti, Andrés Ridois y Mauricio Runno y le dieron nuevos ímpetus al proyecto, por lo que fueron bautizados como Los Laberínticos.</p>
-        <p>Viajaron a Londres y volvieron con el diseño actualizado que ya había terminado Randoll. Esta vez incluía las iniciales de Maria Kodama en el diseño.</p>
-        <p>El 4 de Octubre de 2003 4 amigos terminan de plantar el último boxus.</p>
-        <p>Luego de años, se contacta con <strong>María Kodama</strong> a quien le dona el diseño del laberinto en nombre de Coate. A este nuevo equipo se le suma <strong>Carlos Thays</strong> (nieto) quien lleva a cabo el diseño del master plan del Laberinto y juntos los tres intentan durante 10 años lograr plantarlo en algún lugar de la ciudad de Buenos Aires sin éxito</strong></p>
-        <p>Ya viviendo en San Rafael, Camilo relee el la carta de Randoll y comprende que el papel de Susana Bombal en el sueño. El Laberinto debia hacerse en <strong>Finca "Los Alamos" </strong> casa natal de Susana.</p>
-        <img id="image" class="image mirror" src="../media/historia/DJI_0038.jpg" alt="" width="866.66" height="527.27"/>
+      <section class="historia" id="historia">
+        <h4>Historia</h4>
+        <div class="row contenedor-card georgie"  >
+          <div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
+            <img id="image" class="parallax" src="../media/historia/Foto Laberinto 003.jpg" alt="laberinto aerea" >
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
+            <h2 id="fontTitulo">Georgie y Susana</h2>
+            <p>Fue el conocimiento que compartían sobre literatura inglesa lo que en un primer momento cubrió sus conversaciones. El interés y las charlas dieron paso a una amistad que duraría toda la vida. Una amistad profunda y de mutuo respeto. Por alguna extraña razón el que era tan admirado, esta vez admiraba.</p>
+            <p>Se reunían en la Quinta "San Doménico" donde formaron un grupo de lectura de poemas y cuentos. Y en el departamento de Susana, en Recoleta, a tomar el té o almorzar.</p>
+          </div>
+        </div>
+  
+        <div class="row contenedor-card coate"  >
+          <div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
+            <img id="image" class="parallax" src="../media/historia/Aereas 15.jpg" alt="laberinto aerea" />
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
+            <h2 id="fontTitulo">El diseñador: Randoll Coate</h2>
+            <p>Secretario de prensa de la Embajada Británica en Argentina en los 50, asiduo lector, fanático de Borges y los laberintos. Amigo de Susana Bombal, a quien le pidió conocer a Borges, quien intercedió en dicho encuentro.</p>
+          <p>Randoll al terminar su carrera diplomática devino en un muy prestigioso diseñador de laberintos para Castillos en toda Europa.</p>
+          <p>En el año 1979 tiene un sueño revelador: El memorial de Borges “debía ser un Laberinto y no una estatua llena de angelitos”. Contó su sueño en una carta a Susana, ya que ella aparecía en el sueño y algún papel debía jugar.</p>
+          </div>
+        </div>
+  
+        <div class="row contenedor-card aldao"  >
+          <div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
+            <img id="image" class="parallax" src="../media/historia/Aereas 15.jpg" alt="laberinto aerea" />
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
+            <h2 id="fontTitulo">El impulsor: Camilo Aldao (hijo)</h2>
+            <p>El mayor de cinco hermanos, una persona extraordinariamente instruida y fiel compañero. Fue el sobrino predilecto de Susana Bombal, para ella era el hijo que la vida le negó.</p>
+          <p>Al morir Susana en 1991, Camilo hereda sus pertenencias y en ese revisar sobre qué conservar y qué no, encontró la carta de Randoll a Susana contándole su sueño de hacer un Laberinto. Camilo, que era muy místico y susceptible, tomó esto como un mensaje de Susana: <strong>El laberinto debía hacerse.</strong></p>
+          <p>Con esa idea escribe a Randoll, y parte en avión a Londres a conocerlo personalmente. Allí Randoll le entrega el diseño con la esperanza y el mandato de que se realizara.</p>
+          <p>Luego de años, se contacta con <strong>María Kodama</strong>, a quien le dona el diseño del laberinto en nombre de Coate. A este nuevo equipo se le suma <strong>Carlos Thays</strong> (nieto) quien lleva a cabo el diseño del master plan del Laberinto, y juntos los tres intentan durante 10 años lograr plantarlo en algún lugar de la ciudad de Buenos Aires, sin éxito.</p>
+          <p>Ya viviendo en San Rafael, Camilo relee la carta de Randoll y comprende el papel de Susana Bombal en el sueño. El Laberinto debía hacerse en <strong>Finca "Los Álamos"</strong> la casa natal de Susana.</p>
+          </div>
+        </div>
+  
+        <div class="row contenedor-card laberinticos"  >
+          <div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
+            <img id="image" class="parallax" src="../media/historia/DJI_0038.jpg" alt="laberinto aerea"/>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
+            <h2 id="fontTitulo">Los Laberínticos</h2>
+            <p>En 1999, en un evento realizado en la Finca, Camilo conoce a Gabriel Mortarotti, Andrés Ridois y Mauricio Runno y juntos le dieron nuevos ímpetus al proyecto, por lo que fueron bautizados como Los Laberínticos.</p>
+          <p>Viajaron a Londres y volvieron con el diseño actualizado que ya había terminado Randoll. Esta vez incluía las iniciales de Maria Kodama en el diseño.</p>
+          <p>El 4 de octubre de 2003, cuatro amigos terminan de plantar el último boxus.</p>
+          </div>
+        </div>
       </section>
       
+      <hr>
+      <h2>"Una obra comienza a latir, deja el papel y se hacerealidad.
+        Vive, respira". 
+      </h2>
+      <hr>
+
+      <section class="simbologia">
+        <h4>Simbología</h4>
+
+          <div class="jorge">
+            <h2>Jorge</h2>
+            <img src="../media/simbologia/jorge.webp" alt="Jorge">
+          </div>
+
+          <div class="luis">
+            <h2>Luis</h2>
+            <img src="../media/simbologia/luis.webp" alt="Luis">
+          </div>
+
+          <div class="Borges">
+            <h2>Borges</h2>
+            <img src="../media/simbologia/espejo.webp" alt="Borges">
+            <p><strong>“Hay algo de temible en esa duplicación visual de la realidad”</strong> decía sobre los espejos el genial escritor. Y por su fijación con los espejos, es que Randoll Coate espejó la palabra "Borges" dentro del Laberinto.</p>
+          </div>
+          
+          <div class="86">
+            <h2>86</h2>
+            <img src="../media/simbologia/86.webp" alt="86">
+            <p>Los años que vivió Borges coinciden con el año en que falleció en Ginebra. Este número que lo representa, está allí escondido a la vista de todos: el 86.</p>
+          </div>
+          <div class="kodama">
+            <h2>María Kodama</h2>
+            <img src="../media/simbologia/kodama.webp" alt="kodama">
+            <p>Escritora, compañera de vida de Borges, contrajeron matrimonio en abril de 1986, pocos meses antes de la muerte del gran escritor.</p>
+          </div>
+          <div class="tiempo-infinito">
+            <h2>El Tiempo Infinito</h2>
+            <img src="../media/simbologia/reloj-arena.webp" alt="reloj-de-arena">
+            <img src="../media/simbologia/infinito.webp" alt="infinito">
+            <p>"El tiempo es infinito y paralelo" decía Jorge Luis Borges. Aquí vemos ese pensamiento representado por dos relojes de arena y el símbolo del Infinito que no tiene principio ni fin.</p>
+          </div>
+          <div class="libro-abierto">
+            <h2>Libro Abierto</h2>
+            <img src="../media/simbologia/libro-abierto.webp" alt="libro-abierto">
+            <p>Siempre se dice que el Laberinto es un “Libro abierto al Universo”. Aquí la prueba. El marco de la obra de arte no es otra cosa que un libro gigante que contiene en sí la vida y los símbolos de Borges.</p>
+          </div>
+          <div class="baston">
+            <h2>Bastón</h2>
+            <img src="../media/simbologia/baston.webp" alt="baston">
+            <p>Su bastón, que en tantas caminatas lo acompañó.</p>
+          </div>
+          <div class="interrogacion">
+            <h2>Interrogación</h2>
+            <img src="../media/simbologia/interrogacion.webp" alt="interrogacion">
+            <p>El signo de interrogación, símbolo de la perplejidad, de la duda, de la curiosidad.</p>
+          </div>
 
 
+      </section>
 
-        <blockquote cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm" class="tile_quote">"Una obra comienza a latir, deja el papel y se hace realidad.
-          Vive, respira." 
-        </blockquote>
-      </div>
+      
+
     </main>
-    <footer>
+
+    <footer id="contacto">
+      <div class="ubicacion-contacto">
+        <div class="contact-left">
+            <div class="info">
+              <div class="ubicacion">
+                <h5>Cómo llegar</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.838042246037!2d-68.240760216129!3d-34.65879289628309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a962df774b81%3A0xed3f3c33e9cd786d!2sLaberinto%20de%20Borges!5e0!3m2!1ses!2sar!4v1664254374438!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <ul>
+                <li>
+                  <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p>Calle Bombal s/n. Cuadro Nacional, San Rafael - Mendoza</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa fa-phone"></i>
+                    <p>Telefono: +54 9 260 463-8780</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa fa-clock"></i>
+                    <p>Horario actual: abierto todos los días de 10:00 a 19:00</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="contact-right">
+            <h5>Contáctenos</h5>
+            <div class="col-xs-12 col-sm-6 col-md-8 form">
+                <form action="#" id="consulta" method="post">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="nombre" id="nombre" class="form-control"
+                            placeholder="Nombre" />
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="apellido" id="apellido" class="form-control"
+                            placeholder="Apellido" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="email" id="email" class="form-control"
+                        placeholder="Email" />
+                    </div>
+                        <div class="form-group">
+                      <input type="text" name="asunto" id="asunto" class="form-control"
+                        placeholder="Asunto" />
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" id="consulta" rows="6" cols="20"
+                        placeholder="Escribe tu consulta"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary" name="submit" value="Enviar" />
+                    <div class="loading" style="display: none">
+                      <i class="fa fa-circle-o-notch"> </i> Estamos enviando su
+                      consulta. Aguarde.
+                    </div>
+                    <div class="done" style="display: none">
+                      <b> Gracias ! </b>
+                      , hemos recibido su consulta correctamente, en breve le
+                      respoderemos.
+                    </div>
+                </form>
+            </div>
+        </div>			
+      </div>
+      <hr>
+      <div class="logo-derechos">
+        <img class="logo-footer" src="media/logo1.png" alt="logo">
+        <p class="derechos" >Laberinto de Borges © Copyright 2017. All Rights Reserved.</p>	
+      </div>
+    </footer>
+  
+    <!-- <footer>
       <div class="contenedor-footer-info">
         <div class="col-lg-6 col-md-12 col-sm-12 contact-left">
             <div class="row info">
@@ -116,13 +272,11 @@
         </div>			
       </div>
       <p class="derechos" >Laberinto de Borges © Copyright 2017. All Rights Reserved.</p>
-    </footer>
+    </footer> -->
 
     <script src="../js/header-scroll.js"></script>
     <script src="../js/burguer.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/parallax.js"></script>
 
   </body>
 </html>

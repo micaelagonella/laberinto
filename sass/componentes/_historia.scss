@@ -1,5 +1,31 @@
+.intro-historia{
+    display: flex;
+    background-image: none;
+    background-color: $color-secundario;
+    color: black;
+    padding: 5%;
+    img{
+        width: 50%;
+        padding: 2%;
+    }
+    .intro-historia-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        h2{
+            font-weight: 600;
+            font-size: xxx-large;
+            margin-bottom: 1em;
+            font-family: titulos;
+            color: $color-primario;
+            text-transform: uppercase;
+        }
+    }
 
-.espacios{
+}
+
+.historia{
     h4{
         position: sticky;
         top: 0;
@@ -13,7 +39,6 @@
             font-size: 30px;
         }
     }
-    // background-color: #0d0204;
     background-color: antiquewhite;
     color: gray;
     .contenedor-card{
@@ -95,3 +120,4 @@
     
     
 }
+

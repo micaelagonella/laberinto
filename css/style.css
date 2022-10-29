@@ -451,38 +451,38 @@ header .images .scaling {
     font-size: 30px;
   }
 }
-.espacios .contenedor-espacios {
+.espacios .contenedor-card {
   font-family: body;
   display: flex;
   --bs-gutter-x: none;
 }
 @media screen and (max-width: 992px) {
-  .espacios .contenedor-espacios {
+  .espacios .contenedor-card {
     height: 91h;
   }
 }
-.espacios .contenedor-espacios:nth-child(even) .espacios-descripcion {
+.espacios .contenedor-card:nth-child(even) .card-descripcion {
   background-color: antiquewhite;
   order: -1;
 }
 @media screen and (max-width: 992px) {
-  .espacios .contenedor-espacios:nth-child(even) .espacios-descripcion {
+  .espacios .contenedor-card:nth-child(even) .card-descripcion {
     order: inherit;
   }
 }
-.espacios .contenedor-espacios .espacios-imagen {
+.espacios .contenedor-card .card-imagen {
   width: 50%;
   padding: 0;
   height: 100%;
   position: relative;
 }
 @media screen and (max-width: 992px) {
-  .espacios .contenedor-espacios .espacios-imagen {
+  .espacios .contenedor-card .card-imagen {
     width: 100%;
     height: 70%;
   }
 }
-.espacios .contenedor-espacios .espacios-imagen img {
+.espacios .contenedor-card .card-imagen img {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
@@ -490,22 +490,22 @@ header .images .scaling {
   box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
 }
 @media screen and (max-width: 992px) {
-  .espacios .contenedor-espacios .espacios-imagen img {
+  .espacios .contenedor-card .card-imagen img {
     height: 63vh;
     box-shadow: none;
   }
 }
-.espacios .contenedor-espacios .espacios-imagen h2, .espacios .contenedor-espacios .espacios-imagen h3 {
+.espacios .contenedor-card .card-imagen h2, .espacios .contenedor-card .card-imagen h3 {
   transform: translate(-50%, -50%);
 }
-.espacios .contenedor-espacios .espacios-imagen #fontFrase {
+.espacios .contenedor-card .card-imagen #fontFrase {
   position: absolute;
   font-family: frases;
   color: white;
   bottom: 8%;
   left: 78%;
 }
-.espacios .contenedor-espacios .espacios-descripcion {
+.espacios .contenedor-card .card-descripcion {
   flex-direction: column;
   font-size: 1.5rem;
   display: flex;
@@ -513,22 +513,22 @@ header .images .scaling {
   justify-content: center;
   padding: 7%;
 }
-.espacios .contenedor-espacios .espacios-descripcion #fontTitulo {
+.espacios .contenedor-card .card-descripcion #fontTitulo {
   font-family: titulos;
   color: #8d323a;
   font-weight: 600;
   font-size: xxx-large;
 }
 @media screen and (max-width: 992px) {
-  .espacios .contenedor-espacios .espacios-descripcion {
+  .espacios .contenedor-card .card-descripcion {
     align-items: center;
     text-align: center;
     padding: 4%;
   }
-  .espacios .contenedor-espacios .espacios-descripcion #fontTitulo {
+  .espacios .contenedor-card .card-descripcion #fontTitulo {
     font-size: 24px;
   }
-  .espacios .contenedor-espacios .espacios-descripcion p {
+  .espacios .contenedor-card .card-descripcion p {
     font-size: 17px;
   }
 }
@@ -796,4 +796,157 @@ h4 {
 }
 .carousel-control-prev .carousel-control-prev-icon:hover, .carousel-control-prev .carousel-control-next-icon:hover, .carousel-control-next .carousel-control-prev-icon:hover, .carousel-control-next .carousel-control-next-icon:hover {
   border: white solid 2px;
+}
+
+.intro-historia {
+  display: flex;
+  background-image: none;
+  background-color: #f5efd3;
+  color: black;
+  padding: 5%;
+}
+.intro-historia img {
+  width: 50%;
+  padding: 2%;
+}
+.intro-historia .intro-historia-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.intro-historia .intro-historia-texto h2 {
+  font-weight: 600;
+  font-size: xxx-large;
+  margin-bottom: 1em;
+  font-family: titulos;
+  color: #8d323a;
+  text-transform: uppercase;
+}
+
+.historia {
+  background-color: antiquewhite;
+  color: gray;
+}
+.historia h4 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-family: titulos;
+  font-size: 3rem;
+  color: #f5efd3;
+  background-color: #8d323a;
+  text-align: center;
+  z-index: 10;
+}
+@media screen and (max-width: 772px) {
+  .historia h4 {
+    font-size: 30px;
+  }
+}
+.historia .contenedor-card {
+  font-family: body;
+  display: flex;
+  --bs-gutter-x: none;
+}
+@media screen and (max-width: 992px) {
+  .historia .contenedor-card {
+    height: 91h;
+  }
+}
+.historia .contenedor-card:nth-child(even) .card-descripcion {
+  background-color: antiquewhite;
+  order: -1;
+}
+@media screen and (max-width: 992px) {
+  .historia .contenedor-card:nth-child(even) .card-descripcion {
+    order: inherit;
+  }
+}
+.historia .contenedor-card .card-imagen {
+  width: 50%;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .historia .contenedor-card .card-imagen {
+    width: 100%;
+    height: 70%;
+  }
+}
+.historia .contenedor-card .card-imagen img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+}
+@media screen and (max-width: 992px) {
+  .historia .contenedor-card .card-imagen img {
+    height: 63vh;
+    box-shadow: none;
+  }
+}
+.historia .contenedor-card .card-imagen h2, .historia .contenedor-card .card-imagen h3 {
+  transform: translate(-50%, -50%);
+}
+.historia .contenedor-card .card-imagen #fontFrase {
+  position: absolute;
+  font-family: frases;
+  color: white;
+  bottom: 8%;
+  left: 78%;
+}
+.historia .contenedor-card .card-descripcion {
+  flex-direction: column;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 7%;
+}
+.historia .contenedor-card .card-descripcion #fontTitulo {
+  font-family: titulos;
+  color: #8d323a;
+  font-weight: 600;
+  font-size: xxx-large;
+}
+@media screen and (max-width: 992px) {
+  .historia .contenedor-card .card-descripcion {
+    align-items: center;
+    text-align: center;
+    padding: 4%;
+  }
+  .historia .contenedor-card .card-descripcion #fontTitulo {
+    font-size: 24px;
+  }
+  .historia .contenedor-card .card-descripcion p {
+    font-size: 17px;
+  }
+}
+
+.simbologia {
+  background-color: bisque;
+}
+.simbologia div {
+  height: 100vh;
+  width: 100vw;
+}
+.simbologia div h2 {
+  font-weight: 600;
+  font-size: xxx-large;
+  margin-bottom: 1em;
+  font-family: titulos;
+  color: #8d323a;
+  text-transform: uppercase;
+}
+.simbologia div img {
+  height: 50%;
+  width: 30%;
+}
+.simbologia div p {
+  font-family: body;
+  color: grey;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
