@@ -1,6 +1,6 @@
-let image = document.getElementsByClassName('espacios');
+let image = document.getElementsByClassName('parallax');
 
-function parallaxEspacios(){
+function parallaxImagenesCard(){
   for (let i = 0; i < image.length; i++) {
     if(window.matchMedia("(min-width: 0px) and (max-width: 992px)").matches){
     }else if (window.matchMedia("(min-width: 992px)").matches) {
@@ -16,6 +16,6 @@ function parallaxEspacios(){
     }
   }   
 };
-parallaxEspacios();
+parallaxImagenesCard();
 
 

@@ -17,7 +17,7 @@
     // background-color: #0d0204;
     background-color: antiquewhite;
     color: gray;
-    .contenedor-espacios{
+    .contenedor-card{
         font-family: body;
         display: flex;
         --bs-gutter-x: none;
@@ -25,7 +25,7 @@
             height: 91h;
         }
         &:nth-child(even){
-            .espacios-descripcion{
+            .card-descripcion{
                 background-color: antiquewhite;
                 //en las pares el texto se va a acomodar a la izq
                 order: -1;
@@ -34,7 +34,7 @@
                 }
             }
         }
-        .espacios-imagen{
+        .card-imagen{
             width: 50%;
             padding: 0;
             height: 100%;
@@ -65,7 +65,7 @@
                 left: 78%;
             }
         }
-        .espacios-descripcion{
+        .card-descripcion{
             flex-direction: column;
             font-size: 1.5rem;
             display: flex;
