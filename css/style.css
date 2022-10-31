@@ -927,26 +927,67 @@ h4 {
 }
 
 .simbologia {
-  background-color: bisque;
+  background-color: antiquewhite;
+  color: gray;
 }
-.simbologia div {
+.simbologia .contenedor-card {
+  font-family: body;
+  display: flex;
+  --bs-gutter-x: none;
+}
+.simbologia .contenedor-card:nth-child(even) .card-descripcion {
+  background-color: antiquewhite;
+  order: -1;
+}
+@media screen and (max-width: 992px) {
+  .simbologia .contenedor-card:nth-child(even) .card-descripcion {
+    order: inherit;
+  }
+}
+.simbologia .contenedor-card .card-imagen {
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
+  padding: 0;
+  position: relative;
 }
-.simbologia div h2 {
-  font-weight: 600;
-  font-size: xxx-large;
-  margin-bottom: 1em;
+.simbologia .contenedor-card .card-imagen img {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+}
+@media screen and (max-width: 480px) {
+  .simbologia .contenedor-card .card-imagen img {
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+  }
+}
+.simbologia .contenedor-card .card-descripcion {
+  flex-direction: column;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 7%;
+}
+.simbologia .contenedor-card .card-descripcion #fontTitulo {
   font-family: titulos;
   color: #8d323a;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: xxx-large;
 }
-.simbologia div img {
-  height: 50%;
-  width: 30%;
-}
-.simbologia div p {
-  font-family: body;
-  color: grey;
-  font-size: 1.5rem;
+@media screen and (max-width: 992px) {
+  .simbologia .contenedor-card .card-descripcion {
+    align-items: center;
+    text-align: center;
+    padding: 4%;
+  }
+  .simbologia .contenedor-card .card-descripcion #fontTitulo {
+    font-size: 24px;
+  }
+  .simbologia .contenedor-card .card-descripcion p {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=style.css.map */
