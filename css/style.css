@@ -380,7 +380,7 @@ header .images .scaling {
 }
 .intro .intro-container p {
   font-size: 1.2rem;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 @media all and (max-width: 480px) {
   .intro .intro-container p {
@@ -415,7 +415,7 @@ header .images .scaling {
   text-transform: uppercase;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px; /* Safari */
+  margin: 50px 2px 4px; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
 }
