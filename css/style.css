@@ -42,7 +42,21 @@ body h4 {
   text-align: left;
   padding-left: 6%;
   z-index: 10;
-  opacity: 0.9;
+}
+body .separador {
+  position: sticky;
+  top: 50px;
+  overflow: hidden;
+  height: 20px;
+}
+body .separador:after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 30px;
+  margin: -30px auto 0;
+  border-radius: 120px/10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
 }
 
 .scroll-none {
@@ -111,7 +125,7 @@ body h4 {
 .banner .p2 {
   font-family: body;
   font-size: 1.5em;
-  color: #D0CCB3;
+  color: #c04c56;
   margin-right: 8px;
 }
 @media (min-width: 769px) and (max-width: 992px) {
@@ -265,8 +279,7 @@ header .images .title {
   color: #D0CCB3;
   font-size: inherit;
   opacity: 0;
-  -webkit-animation: appear 5s cubic-bezier(0.5, 0.74, 0.14, 0.99) 5s forwards;
-          animation: appear 5s cubic-bezier(0.5, 0.74, 0.14, 0.99) 5s forwards;
+  animation: appear 5s cubic-bezier(0.5, 0.74, 0.14, 0.99) 5s forwards;
 }
 header .images .title h1 {
   font-size: 6rem !important;
@@ -281,20 +294,10 @@ header .images .scaling {
   position: absolute;
   z-index: 1;
   transition: height 999999999s ease;
-  -webkit-animation: scaling 15s linear infinite alternate forwards;
-          animation: scaling 15s linear infinite alternate forwards;
-}
-
-@-webkit-keyframes scaling {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
-  }
+  animation: scaling 15s linear infinite alternate forwards;
 }
 header .images .scaling-historia {
-  background-image: url("../../media/historia/laberinto-historia (1).jpg");
+  background-image: url("../../media/historia/laberinto-historia.webp");
 }
 
 @keyframes scaling {
@@ -303,14 +306,6 @@ header .images .scaling-historia {
   }
   100% {
     transform: scale(1.2);
-  }
-}
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes appear {
@@ -426,13 +421,15 @@ header .images .scaling-historia {
   color: #D0CCB3;
   background-color: transparent;
   border: 2px solid #D0CCB3;
+  border-radius: 12px;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
   font-size: 16px;
-  margin: 50px 2px 4px; /* Safari */
+  margin: 50px 2px 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -534,9 +531,11 @@ header .images .scaling-historia {
 footer {
   background-color: #8d323a;
   color: #f5efd3;
+  font-family: body;
 }
 footer .ubicacion-contacto {
   display: flex;
+  margin: 0 5%;
 }
 @media (max-width: 992px) {
   footer .ubicacion-contacto {
@@ -563,11 +562,10 @@ footer .ubicacion-contacto .contact-left {
 footer .ubicacion-contacto .contact-left .info .ubicacion {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 footer .ubicacion-contacto .contact-left .info .ubicacion h5 {
   font-family: titulos;
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin-bottom: 3%;
 }
 @media (max-width: 992px) {
@@ -582,7 +580,7 @@ footer .ubicacion-contacto .contact-left .info .ubicacion iframe {
 }
 footer .ubicacion-contacto .contact-left .info ul {
   list-style-type: none;
-  margin: 0 7%;
+  padding-left: 0rem;
 }
 @media (max-width: 992px) {
   footer .ubicacion-contacto .contact-left .info ul {
@@ -605,15 +603,15 @@ footer .ubicacion-contacto .contact-left .info ul li div i {
 }
 footer .ubicacion-contacto .contact-left .info ul li div p {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
+  width: 50%;
 }
 footer .ubicacion-contacto .contact-right {
   width: 50%;
   padding-top: 6%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 @media (max-width: 992px) {
   footer .ubicacion-contacto .contact-right {
@@ -623,7 +621,7 @@ footer .ubicacion-contacto .contact-right {
 }
 footer .ubicacion-contacto .contact-right h5 {
   font-family: titulos;
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin-bottom: 3%;
 }
 @media (max-width: 992px) {
@@ -635,29 +633,39 @@ footer .ubicacion-contacto .contact-right .form {
   width: 71%;
 }
 footer .ubicacion-contacto .contact-right .form .form-control {
-  font-size: 11px;
+  font-size: 15px;
   border: 1px solid #faf9f9;
   background: none;
   font-weight: 300;
   margin-bottom: 13px;
+  color: #8d323a;
+}
+footer .ubicacion-contacto .contact-right .form .form-control::placeholder {
+  color: #faf9f9;
 }
 footer .ubicacion-contacto .contact-right .form .form-control:focus {
-  border: 1px solid black !important;
+  border: 1px solid #faf9f9 !important;
   outline: none !important;
   box-shadow: none;
-  background-color: #f5efd3;
+  background-color: #faf9f9;
+}
+footer .ubicacion-contacto .contact-right .form .form-control:focus::placeholder {
+  color: #8d323a;
 }
 footer .ubicacion-contacto .contact-right .form textarea {
   height: auto;
   resize: none;
 }
+footer .ubicacion-contacto .contact-right .form textarea ::placeholder {
+  color: #faf9f9;
+}
 footer .ubicacion-contacto .contact-right .form .btn-primary {
-  font-size: 9px;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 500;
   width: auto;
   line-height: 29px;
-  padding: 0 7px;
+  padding: 4px 32px;
   display: inline-block;
   border: 1px solid #8d323a;
   background: #680d1c;
@@ -686,12 +694,15 @@ footer .logo-derechos .logo-footer {
 }
 footer .logo-derechos .derechos {
   font-family: body;
-  padding: 2% 0;
+  padding: 1% 0;
   text-align: center;
+  margin-bottom: 0;
+}
+footer .logo-derechos .dev {
+  font-size: small;
 }
 
 h4 {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   font-family: titulos;
@@ -710,6 +721,7 @@ h4 {
 
 .carousel-inner {
   height: 100vh;
+  background-color: black;
 }
 @media screen and (max-width: 772px) {
   .carousel-inner {
@@ -737,6 +749,7 @@ h4 {
 .carousel-inner .carousel-item .carousel-caption {
   right: 2%;
   left: 2%;
+  background: linear-gradient(0deg, black, black, transparent);
   padding: 0% 15%;
 }
 @media screen and (max-width: 480px) {
@@ -849,7 +862,6 @@ h4 {
 }
 
 .historia {
-  padding: 0 5%;
   color: gray;
 }
 .historia h4 {
@@ -868,6 +880,7 @@ h4 {
   }
 }
 .historia .contenedor-card {
+  padding: 0 5%;
   font-family: body;
   display: flex;
   --bs-gutter-x: none;
@@ -947,8 +960,15 @@ h4 {
   }
 }
 
+.quote {
+  padding: 5% 7%;
+  color: darkslategray;
+  width: 60%;
+}
+
 .simbologia {
   color: gray;
+  background: #141414;
 }
 .simbologia .contenedor-card {
   font-family: body;
@@ -982,19 +1002,6 @@ h4 {
     height: 300px;
     box-shadow: none;
   }
-}
-.simbologia .contenedor-card .two-img {
-  overflow: hidden;
-  height: 400px;
-  cursor: pointer;
-  flex-direction: column;
-}
-.simbologia .contenedor-card .two-img img {
-  position: relative;
-  transition: all 2s ease-in !important;
-}
-.simbologia .contenedor-card .two-img:hover img {
-  top: -400px;
 }
 .simbologia .contenedor-card .card-descripcion {
   flex-direction: column;

@@ -2,8 +2,10 @@
 footer{
     background-color: $color-primario;
     color: $color-secundario;
+    font-family: body;
     .ubicacion-contacto{
         display: flex;
+        margin: 0 5%;
         @media (max-width: 992px) {
             flex-direction: column;
         }
@@ -23,10 +25,9 @@ footer{
                         .ubicacion{
                             display: flex;
                             flex-direction: column;
-                            align-items: center;
                             h5{
                                 font-family: titulos;
-                                font-size: 2.25rem;
+                                font-size: 2rem;
                                 margin-bottom: 3%;
                                 @media (max-width: 992px) {
                                     font-size: 30px;
@@ -40,7 +41,7 @@ footer{
                         }
                         ul {
                             list-style-type: none;
-                            margin: 0 7%;
+                            padding-left: 0rem;
                             @media (max-width: 992px)  {
                                 margin: 0 9%;
                             }
@@ -58,8 +59,9 @@ footer{
                                     }
                                     p{
                                         display: block;
-                                        font-size: 15px;
+                                        font-size: 16px;
                                         font-weight: 300;
+                                        width: 50%;
                                     }
                                 }
                             }
@@ -72,14 +74,13 @@ footer{
                 padding-top: 6%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 @media (max-width: 992px) {
                     width: 100%;
                     order: -1;
                 }
                 h5{
                     font-family: titulos;
-                    font-size: 2.25rem;
+                    font-size: 2rem;
                     margin-bottom: 3%;
                     @media (max-width: 992px) {
                         font-size: 30px;
@@ -88,29 +89,39 @@ footer{
                 .form{
                     width: 71%;
                     .form-control{
-                        font-size: 11px;
+                        font-size: 15px;
                         border: 1px solid #faf9f9;
                         background: none;
                         font-weight: 300;
                         margin-bottom: 13px;
+                        color: $color-primario;
+                        &::placeholder{
+                            color: #faf9f9;
+                        }
                         &:focus {
-                            border: 1px solid black!important;
+                            border: 1px solid #faf9f9!important;
                             outline: none!important;
                             box-shadow: none;
-                            background-color: $color-secundario;
+                            background-color: #faf9f9;
+                            &::placeholder{
+                                color: $color-primario;
+                            }
                         }
                     }
                     textarea{
                         height: auto;
                         resize: none;
+                        ::placeholder{
+                            color: #faf9f9;
+                        }
                     }
                     .btn-primary{
-                        font-size: 9px;
+                        font-size: 15px;
                         text-transform: uppercase;
                         font-weight: 500;
                         width: auto;
                         line-height: 29px;
-                        padding: 0 7px;
+                        padding: 4px 32px;
                         display: inline-block;
                         border: 1px solid $color-primario;
                         background: #680d1c;
@@ -138,8 +149,13 @@ footer{
         }
         .derechos{
         font-family: body;
-        padding: 2% 0;
+        padding: 1% 0;
         text-align: center;
+        margin-bottom: 0;
+        
+        }
+        .dev{
+            font-size: small;
         }
     }
 }

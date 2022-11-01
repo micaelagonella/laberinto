@@ -14,6 +14,7 @@ h4{
 }
 .carousel-inner{
     height: 100vh;
+    background-color: black;
     @media screen and (max-width: 772px) { //mobile 
         height: 56vh;
     }
@@ -37,7 +38,7 @@ h4{
         .carousel-caption{
             right: 2%;
             left: 2%;
-            
+            background: linear-gradient(0deg, black,black, transparent);
             padding: 0% 15%;
             
             @media screen and (max-width: 480px) {
