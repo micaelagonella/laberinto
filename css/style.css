@@ -265,7 +265,8 @@ header .images .title {
   color: #D0CCB3;
   font-size: inherit;
   opacity: 0;
-  animation: appear 5s cubic-bezier(0.5, 0.74, 0.14, 0.99) 5s forwards;
+  -webkit-animation: appear 5s cubic-bezier(0.5, 0.74, 0.14, 0.99) 5s forwards;
+          animation: appear 5s cubic-bezier(0.5, 0.74, 0.14, 0.99) 5s forwards;
 }
 header .images .title h1 {
   font-size: 6rem !important;
@@ -280,7 +281,17 @@ header .images .scaling {
   position: absolute;
   z-index: 1;
   transition: height 999999999s ease;
-  animation: scaling 15s linear infinite alternate forwards;
+  -webkit-animation: scaling 15s linear infinite alternate forwards;
+          animation: scaling 15s linear infinite alternate forwards;
+}
+
+@-webkit-keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 header .images .scaling-historia {
   background-image: url("../../media/historia/laberinto-historia (1).jpg");
@@ -292,6 +303,14 @@ header .images .scaling-historia {
   }
   100% {
     transform: scale(1.2);
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes appear {
@@ -347,7 +366,7 @@ header .images .scaling-historia {
 }
 
 .intro {
-  background-image: url("../media/fondo.png");
+  background-image: url("../media/fondo.webp");
   background-size: contain;
   width: 100%;
   height: 100vh;
@@ -378,7 +397,7 @@ header .images .scaling-historia {
 }
 .intro .intro-container p {
   font-size: 1.2rem;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 @media all and (max-width: 480px) {
   .intro .intro-container p {
@@ -413,8 +432,7 @@ header .images .scaling-historia {
   text-transform: uppercase;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  margin: 50px 2px 4px; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -673,6 +691,7 @@ footer .logo-derechos .derechos {
 }
 
 h4 {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   font-family: titulos;
