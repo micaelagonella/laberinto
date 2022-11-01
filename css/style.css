@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: body;
-  src: url("../tipografias/GARA.TTF");
+  src: url("../tipografias/MinionPro-Regular.otf");
 }
 @font-face {
   font-family: frases;
@@ -31,6 +31,19 @@ html {
 body {
   min-height: 100%;
 }
+body h4 {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  font-family: titulos;
+  font-size: 2.5rem;
+  color: #f5efd3;
+  background-color: #8d323a;
+  text-align: left;
+  padding-left: 6%;
+  z-index: 10;
+  opacity: 0.9;
+}
 
 .scroll-none {
   overflow-y: hidden;
@@ -53,7 +66,6 @@ body {
   z-index: 99;
 }
 .banner .sentidos .p1 {
-  font-family: "Libre Baskerville", serif;
   font-family: frases;
   color: #D0CCB3;
   font-size: 3.5em;
@@ -63,112 +75,113 @@ body {
     font-size: 2.3rem;
   }
 }
-.banner .sentidos .p2 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-family: "Poiret One", cursive;
-  font-size: 1.5em;
-  color: #D0CCB3;
-}
-@media (min-width: 769px) and (max-width: 992px) {
-  .banner .sentidos .p2 {
-    font-size: 23px;
-  }
-}
-@media (max-width: 480px) {
-  .banner .sentidos .p2 {
-    font-size: 19px;
-  }
-}
 @media (max-width: 769px) {
   .banner .sentidos {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 .banner .logo {
-  display: contents;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: flex-end;
 }
-.banner .logo img {
-  width: 25%;
-  margin-bottom: 3%;
-}
-@media (max-width: 480px) {
-  .banner .logo img {
-    width: 80%;
+@media (max-width: 769px) {
+  .banner .logo {
+    align-items: center;
+    justify-content: flex-start;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+.banner .logo img {
+  width: 270px;
+}
+@media (max-width: 769px) {
   .banner .logo img {
-    width: 44%;
+    width: 90%;
   }
 }
 @media (max-width: 769px) {
   .banner {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    height: 240vh;
+  }
+}
+.banner .p2 {
+  font-family: body;
+  font-size: 1.5em;
+  color: #D0CCB3;
+  margin-right: 8px;
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .banner .p2 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 480px) {
+  .banner .p2 {
+    font-size: 19px;
   }
 }
 
 .menu-nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   position: fixed;
   z-index: 100;
-  height: 70px;
+  height: 65px;
   transition: 0.7s ease-out;
+  background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
 }
 .menu-nav.scroll-down {
   transform: translate3d(0, -100%, 0);
 }
 .menu-nav.scroll-up {
   transform: none;
-  height: 90px;
-  background: rgba(13, 2, 4, 0.8);
+  height: 50px;
+  background: rgba(13, 2, 4, 0.9);
 }
 .menu-nav .social {
-  left: 3%;
+  left: 8%;
   position: absolute;
 }
+@media all and (max-width: 980px) {
+  .menu-nav .social {
+    position: unset;
+    margin-left: 1rem;
+  }
+}
 .menu-nav .social a i {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #D0CCB3;
   margin: 0% 5px;
 }
-@media all and (max-width: 992px) {
-  .menu-nav .social a i {
-    margin: 0 20px;
-  }
-}
 .menu-nav .social img {
-  height: 1rem;
-  margin-top: -5%;
-}
-@media all and (max-width: 992px) {
-  .menu-nav .social img {
-    vertical-align: baseline;
-    padding-top: 1%;
-    margin: 0 20px;
-  }
+  height: 1.5rem;
+  margin-top: -6%;
+  margin-left: 0.5rem;
 }
 .menu-nav ul {
   display: flex;
+  margin-right: 8%;
   list-style: none;
   font-size: 1em;
   padding-left: 0;
   margin-bottom: 0;
+  align-items: center;
 }
 .menu-nav ul li {
   padding: 0 10px;
 }
 .menu-nav ul li a {
   font-family: titulos;
-  font-weight: bolder;
   text-decoration: none;
   color: #D0CCB3;
   letter-spacing: 1px;
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
 }
 .menu-nav ul li a:hover {
   color: #8d323a;
@@ -178,15 +191,13 @@ body {
 }
 .menu-nav label {
   display: inline;
+  z-index: 99;
 }
 .menu-nav label .btn {
   display: none;
-  position: absolute;
-  width: 33px;
-  height: 43px;
-  right: 2.5rem;
-  top: 1.2rem;
-  padding: 0;
+  width: 55px;
+  height: 44px;
+  margin-right: 0.5rem;
   cursor: pointer;
   /*fin boton burguer*/
 }
@@ -271,6 +282,9 @@ header .images .scaling {
   transition: height 999999999s ease;
   animation: scaling 15s linear infinite alternate forwards;
 }
+header .images .scaling-historia {
+  background-image: url("../../media/historia/laberinto-historia (1).jpg");
+}
 
 @keyframes scaling {
   0% {
@@ -289,6 +303,9 @@ header .images .scaling {
   }
 }
 @media all and (max-width: 980px) {
+  nav {
+    justify-content: space-between !important;
+  }
   nav ul {
     display: flex;
     padding: 28% 0%;
@@ -414,24 +431,7 @@ header .images .scaling {
 }
 
 .espacios {
-  background-color: antiquewhite;
   color: gray;
-}
-.espacios h4 {
-  position: sticky;
-  top: 0;
-  font-family: titulos;
-  font-size: 3rem;
-  color: #f5efd3;
-  background-color: #8d323a;
-  text-align: center;
-  z-index: 10;
-  opacity: 0.9;
-}
-@media screen and (max-width: 772px) {
-  .espacios h4 {
-    font-size: 30px;
-  }
 }
 .espacios .contenedor-card {
   font-family: body;
@@ -444,7 +444,6 @@ header .images .scaling {
   }
 }
 .espacios .contenedor-card:nth-child(even) .card-descripcion {
-  background-color: antiquewhite;
   order: -1;
 }
 @media screen and (max-width: 992px) {
@@ -468,7 +467,7 @@ header .images .scaling {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+  box-shadow: 4px 13px 30px 1px #41464b;
 }
 @media screen and (max-width: 992px) {
   .espacios .contenedor-card .card-imagen img {
@@ -692,7 +691,6 @@ h4 {
 
 .carousel-inner {
   height: 100vh;
-  background: #f5efd3;
 }
 @media screen and (max-width: 772px) {
   .carousel-inner {
@@ -778,16 +776,38 @@ h4 {
   border: white solid 2px;
 }
 
+.banner .titulo {
+  color: white;
+}
+.banner .titulo .titulo-historia {
+  font-family: titulos;
+  font-size: xxx-large;
+}
+.banner .titulo .p2 {
+  font-family: body;
+  font-size: 1.5rem;
+  color: #8d323a;
+}
+
 .intro-historia {
   display: flex;
   background-image: none;
-  background-color: #f5efd3;
   color: black;
   padding: 5%;
+}
+@media screen and (max-width: 772px) {
+  .intro-historia {
+    flex-direction: column;
+  }
 }
 .intro-historia img {
   width: 50%;
   padding: 2%;
+}
+@media screen and (max-width: 772px) {
+  .intro-historia img {
+    width: 100%;
+  }
 }
 .intro-historia .intro-historia-texto {
   display: flex;
@@ -803,17 +823,21 @@ h4 {
   color: #8d323a;
   text-transform: uppercase;
 }
+@media screen and (max-width: 772px) {
+  .intro-historia .intro-historia-texto h2 {
+    font-size: xx-large;
+  }
+}
 
 .historia {
-  background-color: antiquewhite;
+  padding: 0 5%;
   color: gray;
 }
 .historia h4 {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   font-family: titulos;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #f5efd3;
   background-color: #8d323a;
   text-align: center;
@@ -835,7 +859,6 @@ h4 {
   }
 }
 .historia .contenedor-card:nth-child(even) .card-descripcion {
-  background-color: antiquewhite;
   order: -1;
 }
 @media screen and (max-width: 992px) {
@@ -858,9 +881,8 @@ h4 {
 .historia .contenedor-card .card-imagen img {
   width: 100%;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+  object-fit: cover;
+  box-shadow: 4px 13px 30px 1px #41464b;
 }
 @media screen and (max-width: 992px) {
   .historia .contenedor-card .card-imagen img {
@@ -907,16 +929,13 @@ h4 {
 }
 
 .simbologia {
-  background-color: antiquewhite;
   color: gray;
 }
 .simbologia .contenedor-card {
   font-family: body;
   display: flex;
-  --bs-gutter-x: none;
 }
 .simbologia .contenedor-card:nth-child(even) .card-descripcion {
-  background-color: antiquewhite;
   order: -1;
 }
 @media screen and (max-width: 992px) {
@@ -927,14 +946,15 @@ h4 {
 .simbologia .contenedor-card .card-imagen {
   height: 100vh;
   width: 50vw;
+  display: flex;
   padding: 0;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .simbologia .contenedor-card .card-imagen img {
-  width: 500px;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 400px;
+  object-fit: cover;
   box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
 }
 @media screen and (max-width: 480px) {
@@ -943,6 +963,19 @@ h4 {
     height: 300px;
     box-shadow: none;
   }
+}
+.simbologia .contenedor-card .two-img {
+  overflow: hidden;
+  height: 400px;
+  cursor: pointer;
+  flex-direction: column;
+}
+.simbologia .contenedor-card .two-img img {
+  position: relative;
+  transition: all 2s ease-in !important;
+}
+.simbologia .contenedor-card .two-img:hover img {
+  top: -400px;
 }
 .simbologia .contenedor-card .card-descripcion {
   flex-direction: column;
