@@ -12,7 +12,7 @@ function lineaAnimada(){
     linea1.classList.toggle("linea1active");
     linea2.classList.toggle("linea2active");
     linea3.classList.toggle("linea3active");
-    document.body.classList.toggle("scroll-none");
+    // document.body.classList.toggle("scroll-none");
     menu.classList.toggle("colapse");
 }
 /*FIN Logica para crear la cruz del menu burguer*/

@@ -25,6 +25,7 @@ footer{
                         .ubicacion{
                             display: flex;
                             flex-direction: column;
+                            align-items: center;
                             h5{
                                 font-family: titulos;
                                 font-size: 2rem;
@@ -41,12 +42,12 @@ footer{
                         }
                         ul {
                             list-style-type: none;
-                            padding-left: 0rem;
+                            padding-left: 3rem;
                             @media (max-width: 992px)  {
                                 margin: 0 9%;
                             }
                             @media (max-width: 480px)  {
-                                margin: 0 13% 0 6%;
+                                
                             }
                             li{
                                 div{
@@ -62,6 +63,9 @@ footer{
                                         font-size: 16px;
                                         font-weight: 300;
                                         width: 50%;
+                                        @media (max-width: 992px)  {
+                                            width: 80%!important;
+                                        }
                                     }
                                 }
                             }
@@ -77,6 +81,7 @@ footer{
                 @media (max-width: 992px) {
                     width: 100%;
                     order: -1;
+                    align-items: center;
                 }
                 h5{
                     font-family: titulos;
