@@ -1,3 +1,29 @@
+const contenedorCards = document.querySelector('.simbol');
+const listaPrimera = [
+    {
+        titulo: "Jorge",
+        descripcion: "",
+        imagen: "../media/simbologia/jorge.webp"
+    }
+];
+let mediaquerys = window.matchMedia( '(min-width: 800px)' )
+let clickForSiguiente;
+if (mediaquerys.matches) {
+    clickForSiguiente = 'Hacé click para continuar';
+}else{
+    clickForSiguiente = 'Toca la pantalla para continuar';
+}
+
+contenedorCards.innerHTML = `<div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
+<img id="image" src="${listaPrimera[0].imagen}" alt="interrogacion">
+</div>
+<div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
+<h2 id="fontTitulo">${listaPrimera[0].titulo}</h2>
+<p>${listaPrimera[0].descripcion}</p>
+<span>${clickForSiguiente}</span>
+</div>`;
+
+
 const lista = [
 {
     titulo: "Jorge Luis",
@@ -44,16 +70,36 @@ const lista = [
     descripcion: "El signo de interrogación, símbolo de la perplejidad, de la duda, de la curiosidad.",
     imagen: "../media/simbologia/interrogacion.webp"
 },
+{
+    titulo: "¡Los esperamos!",
+    descripcion: "",
+    imagen: "../media/simbologia/gracias.webp"
+}
 ];
+var cantElementos = lista.length;
+console.log(cantElementos);
 
 function renderizarElementos(lista) {
-    const contenedorCards = document.querySelector('.simbol');
+    
+    //const contenedorCards = document.querySelector('.simbol');
     console.log(contenedorCards);
     let contador = 0;
+    let clickForNext;
+    let mediaquery = window.matchMedia( '(min-width: 800px)' )
+    
     
     contenedorCards.addEventListener('click',()=>{
-
-        
+            
+        if (contador<=cantElementos-2) {
+            console.log(contador<=cantElementos-5);
+            if (mediaquery.matches) {
+                clickForNext = 'Hacé click para continuar';
+            }else{
+                clickForNext = 'Toca la pantalla para continuar';
+            }
+        } else {
+            clickForNext = '';
+        }
         
             contenedorCards.innerHTML =
                 `<div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
@@ -62,9 +108,12 @@ function renderizarElementos(lista) {
                 <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
                   <h2 id="fontTitulo">${lista[contador].titulo}</h2>
                   <p>${lista[contador].descripcion}</p>
-                  <spam>Hacé click para continuar</spam>
+                  <span>${clickForNext}</span>
                 </div>`;
     
+                
+
+                
                 contador++;
         
     })

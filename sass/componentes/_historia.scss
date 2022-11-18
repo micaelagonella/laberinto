@@ -6,12 +6,16 @@
             font-family: titulos;
             font-size: xxx-large;
         }
-        .p2{
-            font-family: body;
-            font-size: 1.5rem;
-            color: $color-primario;
-        }
+        
     }
+}
+.p2{
+    font-family: body;
+    font-size: 1.5rem;
+    color: $color-primario;
+}
+.color{
+    color: darkslategrey;
 }
 .intro-historia{
     display: flex;
@@ -31,8 +35,7 @@
     .intro-historia-texto{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: center;
         h2{
             font-weight: 600;
             font-size: xxx-large;
@@ -50,19 +53,7 @@
 
 .historia{
     
-    h4{
-        position: sticky;
-        top: 0;
-        font-family: titulos;
-        font-size: 2.5rem;
-        color: $color-secundario;
-        background-color: $color-primario;
-        text-align: center;
-        z-index: 10;
-        @media screen and (max-width: 772px) { //mobile 
-            font-size: 30px;
-        }
-    }
+    
     color: gray;
     .contenedor-card{
         padding: 0 5%;
@@ -146,7 +137,19 @@
 .quote{
     padding: 5% 7%;
     color: darkslategray;
-    width: 60%;
+    text-align: center;
+}
+h5{
+    font-family: titulos;
+    font-size: 2.5rem;
+    color: $color-secundario;
+    background-color: $color-primario;
+    text-align: left;
+    padding-left: 3%;
+    z-index: 10;
+    @media screen and (max-width: 772px) { //mobile 
+        font-size: 30px;
+    }
 }
 
 
