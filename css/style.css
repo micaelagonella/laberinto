@@ -34,10 +34,10 @@ body {
 body h4 {
   height: 50px;
   position: sticky;
-  top: 0;
+  top: 50px;
   font-family: titulos;
   font-size: 2.5rem;
-  color: #f5efd3;
+  color: white;
   background-color: #8d323a;
   text-align: left;
   padding-left: 6%;
@@ -81,7 +81,7 @@ body .separador:after {
 }
 .banner .sentidos .p1 {
   font-family: frases;
-  color: #D0CCB3;
+  color: white;
   font-size: 3.5em;
 }
 @media (max-width: 992px) {
@@ -125,7 +125,7 @@ body .separador:after {
 .banner .p2 {
   font-family: body;
   font-size: 1.5em;
-  color: #c04c56;
+  color: gray;
   margin-right: 8px;
 }
 @media (min-width: 769px) and (max-width: 992px) {
@@ -150,13 +150,15 @@ body .separador:after {
   transition: 0.7s ease-out;
   background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
 }
-.menu-nav.scroll-down {
-  transform: translate3d(0, -100%, 0);
-}
-.menu-nav.scroll-up {
-  transform: none;
+.menu-nav.scrolled {
   height: 50px;
-  background: rgba(13, 2, 4, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+}
+.menu-nav.scrolled .menu-icon_line, .menu-nav.scrolled .menu-icon_line::before, .menu-nav.scrolled .menu-icon_line::after {
+  background: #fff !important;
+}
+.menu-nav.scrolled a, .menu-nav.scrolled .nav-links a {
+  color: #fff !important;
 }
 .menu-nav .social {
   left: 8%;
@@ -170,7 +172,7 @@ body .separador:after {
 }
 .menu-nav .social a i {
   font-size: 1.2em;
-  color: #D0CCB3;
+  color: gray;
   margin: 0% 5px;
 }
 .menu-nav .social img {
@@ -196,9 +198,15 @@ body .separador:after {
   color: #D0CCB3;
   letter-spacing: 1px;
   transition: all 0.2s ease-out;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
 }
-.menu-nav ul li a:hover {
+.menu-nav ul li a:hover, .menu-nav ul li a:focus {
   color: #8d323a;
+  background-size: 100% 2px;
 }
 .menu-nav input {
   display: none;
@@ -415,7 +423,11 @@ header .images .scaling-historia {
 @media all and (max-width: 992px) {
   .intro .intro-container #titulo2 {
     font-size: 13px;
+    color: #D0CCB3;
   }
+}
+.intro #intro-title, .intro #titulo2 {
+  color: white;
 }
 .intro .button {
   color: #D0CCB3;
@@ -562,7 +574,6 @@ footer .ubicacion-contacto .contact-left {
 footer .ubicacion-contacto .contact-left .info .ubicacion {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 footer .ubicacion-contacto .contact-left .info .ubicacion h5 {
   font-family: titulos;
@@ -723,7 +734,7 @@ h4 {
 
 .carousel-inner {
   height: 100vh;
-  background-color: black;
+  background-color: #1A1221;
 }
 @media screen and (max-width: 772px) {
   .carousel-inner {
@@ -751,7 +762,7 @@ h4 {
 .carousel-inner .carousel-item .carousel-caption {
   right: 2%;
   left: 2%;
-  background: linear-gradient(0deg, black, black, transparent);
+  background: linear-gradient(0deg, #1A1221, #1A1221, transparent);
   padding: 0% 15%;
 }
 @media screen and (max-width: 480px) {
@@ -768,7 +779,7 @@ h4 {
 .carousel-inner .carousel-item .carousel-caption p {
   font-family: body;
   font-size: 1.2rem;
-  color: grey;
+  color: cornsilk;
 }
 @media screen and (min-width: 772px) and (max-width: 1024px) {
   .carousel-inner .carousel-item .carousel-caption {
@@ -807,7 +818,7 @@ h4 {
   color: #8d323a;
 }
 .carousel-control-prev .carousel-control-prev-icon:hover, .carousel-control-prev .carousel-control-next-icon:hover, .carousel-control-next .carousel-control-prev-icon:hover, .carousel-control-next .carousel-control-next-icon:hover {
-  border: white solid 2px;
+  transform: scale(1.2);
 }
 
 .banner .titulo {
@@ -957,31 +968,28 @@ h4 {
   text-align: center;
 }
 
-h5 {
+.fontTitulo {
   font-family: titulos;
-  font-size: 2.5rem;
-  color: #f5efd3;
-  background-color: #8d323a;
-  text-align: left;
-  padding-left: 3%;
-  z-index: 10;
-}
-@media screen and (max-width: 772px) {
-  h5 {
-    font-size: 30px;
-  }
+  color: #8d323a;
+  font-weight: 600;
+  font-size: xxx-large;
 }
 
 .simbologia {
   color: gray;
 }
 .simbologia .contenedor-card {
+  flex-wrap: nowrap;
   --bs-gutter-x: 0rem;
-  cursor: pointer;
   font-family: body;
   display: flex;
   justify-content: center;
   padding: 0 7%;
+}
+@media screen and (max-width: 992px) {
+  .simbologia .contenedor-card {
+    flex-direction: column;
+  }
 }
 .simbologia .contenedor-card:nth-child(even) .card-descripcion {
   align-items: start;
@@ -1027,15 +1035,13 @@ h5 {
   justify-content: center;
   padding: 7%;
 }
-.simbologia .contenedor-card .card-descripcion #fontTitulo {
-  font-family: titulos;
-  color: #8d323a;
-  font-weight: 600;
-  font-size: xxx-large;
-}
-.simbologia .contenedor-card .card-descripcion span {
-  color: #728126;
+.simbologia .contenedor-card .card-descripcion #simbol {
+  background-color: #728126;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 32px;
   align-self: start;
+  cursor: pointer;
 }
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card .card-descripcion {
@@ -1048,4 +1054,7 @@ h5 {
   .simbologia .contenedor-card .card-descripcion p {
     font-size: 17px;
   }
+}
+.simbologia #simbolTitile {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

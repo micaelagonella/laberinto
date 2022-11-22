@@ -139,17 +139,6 @@
     color: darkslategray;
     text-align: center;
 }
-h5{
-    font-family: titulos;
-    font-size: 2.5rem;
-    color: $color-secundario;
-    background-color: $color-primario;
-    text-align: left;
-    padding-left: 3%;
-    z-index: 10;
-    @media screen and (max-width: 772px) { //mobile 
-        font-size: 30px;
-    }
-}
+
 
 

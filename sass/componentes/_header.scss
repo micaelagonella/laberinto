@@ -79,15 +79,29 @@
     transition: .7s ease-out;
     background-image: linear-gradient(180deg, var(--background-color), var(--background-color), transparent);
     
-    &.scroll-down  {
-        transform: translate3d(0, -100%, 0)
-    }
-    &.scroll-up {
-      transform: none;
-      height: 50px;
-      background: rgba(13, 2, 4, 0.9);
-    }
-       
+    // &.scroll-down  {
+    //     transform: translate3d(0, -100%, 0)
+    // }
+    // &.scroll-up {
+    //   transform: none;
+    //   height: 50px;
+    //   background: rgba(13, 2, 4, 0.9);
+    // }
+    &.scrolled {
+        height: 50px;
+        background: rgba(0, 0, 0, 0.9);
+        .menu-icon {
+          &_line,
+          &_line::before,
+          &_line::after {
+            background: #fff !important;
+          }
+          
+        }
+        a, .nav-links a{
+          color: #fff !important; 
+        }
+      }
 
     .social {
         left: 8%;
@@ -100,7 +114,7 @@
 
         a i {
             font-size: 1.2em;
-            color: #D0CCB3;
+            color: gray;
             margin: 0% 5px;
             // @media all and (max-width: 992px) {
             //     margin: 0 20px;
@@ -134,12 +148,19 @@
                 color: #D0CCB3;
                 letter-spacing: 1px;
                 transition: all .2s ease-out;
-                &:hover{
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 50% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .5s;
+                &:hover,&:focus{
                     color: #8d323a;
+                    background-size: 100% 2px;
                 }
             }
 
         }
+        
     }
 
     input {

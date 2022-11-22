@@ -9,18 +9,15 @@
     align-items: center;
     justify-content: space-between;
     z-index: 99;
-
     .sentidos{
         .p1{
             font-family: frases;
-            color: #D0CCB3;
+            color: white;
             font-size: 3.5em;
             @media(max-width: 992px)  {
                 font-size: 2.3rem;
             }
-            
         }
-        
         @media (max-width: 769px) {
             display: flex;
             flex-direction: column;
@@ -37,10 +34,8 @@
             align-items: center;
             justify-content: flex-start;
         }
-
         img {
             width: 270px;
-
             @media (max-width: 769px) {
                 width: 90%;
             }
@@ -53,7 +48,7 @@
     .p2{
         font-family: body;
         font-size: 1.5em;
-        color: #c04c56;
+        color: gray;
         margin-right: 8px;
         @media (min-width: 769px) and (max-width: 992px) {
             font-size: 23px;
@@ -65,4 +60,3 @@
 }
 
 
-    

@@ -9,7 +9,7 @@ const listaPrimera = [
 let mediaquerys = window.matchMedia( '(min-width: 800px)' )
 let clickForSiguiente;
 if (mediaquerys.matches) {
-    clickForSiguiente = 'Hacé click para continuar';
+    clickForSiguiente = 'Click para continuar &#9755';
 }else{
     clickForSiguiente = 'Toca la pantalla para continuar';
 }
@@ -18,9 +18,9 @@ contenedorCards.innerHTML = `<div class="col-lg-6 col-md-12 col-sm-12 card-image
 <img id="image" src="${listaPrimera[0].imagen}" alt="interrogacion">
 </div>
 <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
-<h2 id="fontTitulo">${listaPrimera[0].titulo}</h2>
+<h2 class="fontTitulo">${listaPrimera[0].titulo}</h2>
 <p>${listaPrimera[0].descripcion}</p>
-<span>${clickForSiguiente}</span>
+<span id="simbol">${clickForSiguiente}</span>
 </div>`;
 
 
@@ -89,26 +89,31 @@ function renderizarElementos(lista) {
     
     
     contenedorCards.addEventListener('click',()=>{
-            
-        if (contador<=cantElementos-2) {
-            console.log(contador<=cantElementos-5);
+        let claseSpan = '';
+
+        if (contador<cantElementos-1) {
+            claseSpan = "simbol";
             if (mediaquery.matches) {
-                clickForNext = 'Hacé click para continuar';
+                clickForNext = 'Hacé click para continuar &#9755';
+                
             }else{
                 clickForNext = 'Toca la pantalla para continuar';
+                
             }
-        } else {
-            clickForNext = '';
+        }else{
+            claseSpan = "";
+            clickForNext ="";
         }
+        
         
             contenedorCards.innerHTML =
                 `<div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
                   <img id="image" src="${lista[contador].imagen}" alt="interrogacion">
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
-                  <h2 id="fontTitulo">${lista[contador].titulo}</h2>
+                  <h2 class="fontTitulo">${lista[contador].titulo}</h2>
                   <p>${lista[contador].descripcion}</p>
-                  <span>${clickForNext}</span>
+                  <span id=${claseSpan}>${clickForNext}</span>
                 </div>`;
     
                 
