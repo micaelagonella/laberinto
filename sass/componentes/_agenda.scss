@@ -14,7 +14,7 @@ h4{
 }
 .carousel-inner{
     height: 100vh;
-    background-color: #1A1221;
+    background-color: #1f1f1f;
     @media screen and (max-width: 772px) { //mobile 
         height: 56vh;
     }
@@ -38,22 +38,21 @@ h4{
         .carousel-caption{
             right: 2%;
             left: 2%;
-            background: linear-gradient(0deg, #1A1221,#1A1221, transparent);
-            padding: 0% 15%;
+            background: linear-gradient(0deg, #1f1f1f,#1f1f1f, transparent);
+            padding: 5% 15%;
             
             @media screen and (max-width: 480px) {
                     bottom: 0;
                 }
             h5{
                 font-family: titulos;
-                color: $color-primario;
-                font-weight: 600;
+                color: white;
                 font-size: xxx-large;
             }
             p{
                 font-family: body;
                 font-size: 1.2rem;
-                color: cornsilk;
+                color: lightgrey;
             }
             @media screen and (min-width: 772px) and (max-width: 1024px) { //tablet
                 padding: 1rem 7rem;
@@ -86,8 +85,7 @@ h4{
         font-size: 2rem;
         width: 3rem;
         height: 3rem;
-        transition: all .3s ease-in;
-        color: $color-primario;
+        transition: all .1s ease-in;
         &:hover{
             transform: scale(1.2);
         
