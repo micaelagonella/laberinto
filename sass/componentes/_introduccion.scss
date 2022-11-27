@@ -11,6 +11,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media all and (max-width: 992px) {
+        text-align: unset;
+    }
     .intro-empty{
         width: 100%;
         order: 2;
@@ -29,11 +32,8 @@
         p{
             font-size: 1.2rem;
             padding-top: 3%;
-            @media all and (max-width: 480px) {
-                text-align: justify;
-            }
             @media all and (max-width: 992px) {
-                font-size: 17px;;
+                font-size: 17px;
             }
         }
         .fontTitulo{
@@ -69,8 +69,7 @@
             transition-duration: 0.4s;
             cursor: pointer;
             @media all and (max-width: 992px) {
-                padding: 8px 11px;
-                font-size: 11px;
+                font-size: 14px;
             }
             
         }

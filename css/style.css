@@ -127,7 +127,7 @@ body .separador:after {
 .banner .p2 {
   font-family: body;
   font-size: 1.5em;
-  color: gray;
+  color: lightgray;
   margin-right: 8px;
 }
 @media (min-width: 769px) and (max-width: 992px) {
@@ -368,6 +368,7 @@ header .images .scaling-historia {
     display: block;
     font-size: 2em;
     padding-left: 0px;
+    text-align: center;
   }
   nav ul li a {
     color: #D3E4CD;
@@ -403,6 +404,11 @@ header .images .scaling-historia {
   justify-content: center;
   align-items: center;
 }
+@media all and (max-width: 992px) {
+  .intro {
+    text-align: unset;
+  }
+}
 .intro .intro-empty {
   width: 100%;
   order: 2;
@@ -422,11 +428,6 @@ header .images .scaling-historia {
 .intro .intro-container p {
   font-size: 1.2rem;
   padding-top: 3%;
-}
-@media all and (max-width: 480px) {
-  .intro .intro-container p {
-    text-align: justify;
-  }
 }
 @media all and (max-width: 992px) {
   .intro .intro-container p {
@@ -467,8 +468,7 @@ header .images .scaling-historia {
 }
 @media all and (max-width: 992px) {
   .intro .button {
-    padding: 8px 11px;
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 .intro .button:hover {
@@ -549,9 +549,7 @@ header .images .scaling-historia {
 }
 @media screen and (max-width: 992px) {
   .espacios .contenedor-card .card-descripcion {
-    align-items: center;
-    text-align: center;
-    padding: 4%;
+    padding: 6%;
   }
   .espacios .contenedor-card .card-descripcion #fontTitulo {
     font-size: 24px;
@@ -613,11 +611,12 @@ footer .ubicacion-contacto .contact-left .info .ubicacion iframe {
 }
 footer .ubicacion-contacto .contact-left .info ul {
   list-style-type: none;
-  padding-left: 3rem;
+  padding-left: 0rem;
 }
 @media (max-width: 992px) {
   footer .ubicacion-contacto .contact-left .info ul {
-    margin: 0 9%;
+    margin-right: 9%;
+    padding-left: 0;
   }
 }
 footer .ubicacion-contacto .contact-left .info ul li div {
@@ -650,7 +649,6 @@ footer .ubicacion-contacto .contact-right {
   footer .ubicacion-contacto .contact-right {
     width: 100%;
     order: -1;
-    align-items: center;
   }
 }
 footer .ubicacion-contacto .contact-right h5 {
@@ -746,9 +744,10 @@ footer .logo-derechos .logo-footer {
 }
 footer .logo-derechos .derechos {
   font-family: body;
-  padding: 1% 0;
+  padding: 1% 5%;
   text-align: center;
   margin-bottom: 0;
+  font-size: smaller;
 }
 footer .logo-derechos .dev {
   font-size: small;
@@ -774,7 +773,7 @@ h4 {
 
 .carousel-inner {
   height: 100vh;
-  background-color: #1A1221;
+  background-color: #1f1f1f;
 }
 @media screen and (max-width: 772px) {
   .carousel-inner {
@@ -802,24 +801,25 @@ h4 {
 .carousel-inner .carousel-item .carousel-caption {
   right: 2%;
   left: 2%;
-  background: linear-gradient(0deg, #1A1221, #1A1221, transparent);
-  padding: 0% 15%;
+  background: linear-gradient(0deg, #1f1f1f, #1f1f1f, transparent);
+  padding: 5% 15%;
 }
 @media screen and (max-width: 480px) {
   .carousel-inner .carousel-item .carousel-caption {
     bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
 .carousel-inner .carousel-item .carousel-caption h5 {
   font-family: titulos;
-  color: #8d323a;
-  font-weight: 600;
+  color: white;
   font-size: xxx-large;
 }
 .carousel-inner .carousel-item .carousel-caption p {
   font-family: body;
   font-size: 1.2rem;
-  color: cornsilk;
+  color: lightgrey;
 }
 @media screen and (min-width: 772px) and (max-width: 1024px) {
   .carousel-inner .carousel-item .carousel-caption {
@@ -834,7 +834,8 @@ h4 {
 }
 @media screen and (max-width: 772px) {
   .carousel-inner .carousel-item .carousel-caption {
-    padding: 10px;
+    text-align: unset;
+    padding: 17% 5%;
   }
   .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 24px;
@@ -854,8 +855,7 @@ h4 {
   font-size: 2rem;
   width: 3rem;
   height: 3rem;
-  transition: all 0.3s ease-in;
-  color: #8d323a;
+  transition: all 0.1s ease-in;
 }
 .carousel-control-prev .carousel-control-prev-icon:hover, .carousel-control-prev .carousel-control-next-icon:hover, .carousel-control-next .carousel-control-prev-icon:hover, .carousel-control-next .carousel-control-next-icon:hover {
   transform: scale(1.2);
@@ -992,7 +992,6 @@ h4 {
 @media screen and (max-width: 992px) {
   .historia .contenedor-card .card-descripcion {
     align-items: center;
-    text-align: center;
     padding: 4%;
   }
   .historia .contenedor-card .card-descripcion #fontTitulo {
@@ -1030,6 +1029,7 @@ h4 {
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card {
     flex-direction: column;
+    margin-top: 100px;
   }
 }
 .simbologia .contenedor-card:nth-child(even) .card-descripcion {
@@ -1053,7 +1053,7 @@ h4 {
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card .card-imagen {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
   }
 }
 .simbologia .contenedor-card .card-imagen img {
@@ -1061,6 +1061,11 @@ h4 {
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+}
+@media screen and (max-width: 992px) {
+  .simbologia .contenedor-card .card-imagen img {
+    height: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
   .simbologia .contenedor-card .card-imagen img {
@@ -1099,4 +1104,20 @@ h4 {
 }
 .simbologia #simbolTitile {
   position: relative;
+}
+
+.documental {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.documental h2 {
+  font-family: titulos;
+}
+@media screen and (max-width: 560px) {
+  .documental iframe {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
