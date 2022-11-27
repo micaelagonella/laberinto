@@ -11,7 +11,7 @@ let clickForSiguiente;
 if (mediaquerys.matches) {
     clickForSiguiente = 'Click para continuar &#9755';
 }else{
-    clickForSiguiente = 'Toca la pantalla para continuar';
+    clickForSiguiente = 'Toca para continuar';
 }
 
 contenedorCards.innerHTML = `<div class="col-lg-6 col-md-12 col-sm-12 card-imagen">
@@ -97,7 +97,7 @@ function renderizarElementos(lista) {
                 clickForNext = 'Hacé click para continuar &#9755';
                 
             }else{
-                clickForNext = 'Toca la pantalla para continuar';
+                clickForNext = 'Toca para continuar';
                 
             }
         }else{

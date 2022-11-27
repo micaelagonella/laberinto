@@ -43,6 +43,8 @@ h4{
             
             @media screen and (max-width: 480px) {
                     bottom: 0;
+                    left: 0;
+                    width: 100%;
                 }
             h5{
                 font-family: titulos;
@@ -56,6 +58,7 @@ h4{
             }
             @media screen and (min-width: 772px) and (max-width: 1024px) { //tablet
                 padding: 1rem 7rem;
+
                 h5{
                     font-size: 1.5rem;
                 }
@@ -64,7 +67,8 @@ h4{
                 }
             }
             @media screen and (max-width: 772px) { //mobile 
-                padding: 10px;
+                text-align: unset;
+                padding: 17% 5%;
                 h5{
                     font-size: 24px;
                 }

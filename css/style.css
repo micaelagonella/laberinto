@@ -347,6 +347,7 @@ header .images .scaling-historia {
     display: block;
     font-size: 2em;
     padding-left: 0px;
+    text-align: center;
   }
   nav ul li a {
     color: #D3E4CD;
@@ -382,6 +383,11 @@ header .images .scaling-historia {
   justify-content: center;
   align-items: center;
 }
+@media all and (max-width: 992px) {
+  .intro {
+    text-align: unset;
+  }
+}
 .intro .intro-empty {
   width: 100%;
   order: 2;
@@ -401,11 +407,6 @@ header .images .scaling-historia {
 .intro .intro-container p {
   font-size: 1.2rem;
   padding-top: 3%;
-}
-@media all and (max-width: 480px) {
-  .intro .intro-container p {
-    text-align: justify;
-  }
 }
 @media all and (max-width: 992px) {
   .intro .intro-container p {
@@ -447,8 +448,7 @@ header .images .scaling-historia {
 }
 @media all and (max-width: 992px) {
   .intro .button {
-    padding: 8px 11px;
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 .intro .button:hover {
@@ -528,9 +528,7 @@ header .images .scaling-historia {
 }
 @media screen and (max-width: 992px) {
   .espacios .contenedor-card .card-descripcion {
-    align-items: center;
-    text-align: center;
-    padding: 4%;
+    padding: 6%;
   }
   .espacios .contenedor-card .card-descripcion #fontTitulo {
     font-size: 24px;
@@ -707,9 +705,10 @@ footer .logo-derechos .logo-footer {
 }
 footer .logo-derechos .derechos {
   font-family: body;
-  padding: 1% 0;
+  padding: 1% 5%;
   text-align: center;
   margin-bottom: 0;
+  font-size: smaller;
 }
 footer .logo-derechos .dev {
   font-size: small;
@@ -768,6 +767,8 @@ h4 {
 @media screen and (max-width: 480px) {
   .carousel-inner .carousel-item .carousel-caption {
     bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
 .carousel-inner .carousel-item .carousel-caption h5 {
@@ -793,7 +794,8 @@ h4 {
 }
 @media screen and (max-width: 772px) {
   .carousel-inner .carousel-item .carousel-caption {
-    padding: 10px;
+    text-align: unset;
+    padding: 17% 5%;
   }
   .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 24px;
@@ -1010,7 +1012,7 @@ h4 {
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card .card-imagen {
     width: 100vw;
-    height: 50vh;
+    height: 30vh;
   }
 }
 .simbologia .contenedor-card .card-imagen img {
