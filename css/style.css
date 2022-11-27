@@ -950,7 +950,6 @@ h4 {
 }
 @media screen and (max-width: 992px) {
   .historia .contenedor-card .card-descripcion {
-    align-items: center;
     padding: 4%;
   }
   .historia .contenedor-card .card-descripcion #fontTitulo {
@@ -972,6 +971,11 @@ h4 {
   color: #8d323a;
   font-weight: 600;
   font-size: xxx-large;
+}
+@media screen and (max-width: 992px) {
+  .fontTitulo {
+    font-size: xx-large;
+  }
 }
 
 .simbologia {

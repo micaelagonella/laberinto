@@ -4,6 +4,9 @@
     color: $color-primario;
     font-weight: 600;
     font-size: xxx-large;
+    @media screen and (max-width: 992px) {
+        font-size: xx-large;
+    }
 }
 .simbologia{
     
