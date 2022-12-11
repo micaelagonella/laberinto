@@ -98,7 +98,7 @@ footer{
                         background: none;
                         font-weight: 300;
                         margin-bottom: 13px;
-                        color: $color-primario;
+                        color: #faf9f9;
                         &::placeholder{
                             color: #faf9f9;
                         }
@@ -107,6 +107,7 @@ footer{
                             outline: none!important;
                             box-shadow: none;
                             background-color: #faf9f9;
+                            color: $color-primario;
                             &::placeholder{
                                 color: $color-primario;
                             }
