@@ -44,12 +44,15 @@
             #fontFrase{
                 position: absolute;
                 font-family: frases;
+                font-size: 2.5rem;
                 color: white;
                 bottom: 8%;
                 left: 78%;
+                text-shadow: 0px -2px 22px rgba(0,0,0,1);
             }
         }
         .card-descripcion{
+            overflow: hidden;
             flex-direction: column;
             font-size: 1.5rem;
             display: flex;

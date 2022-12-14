@@ -171,9 +171,14 @@ body .separador:after {
   }
 }
 .menu-nav .social a i {
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: gray;
   margin: 0% 5px;
+  transition: all 0.2s;
+}
+.menu-nav .social a i:hover {
+  color: #e04854;
+  transform: scale(1.1);
 }
 .menu-nav .social img {
   height: 1.5rem;
@@ -193,20 +198,23 @@ body .separador:after {
   padding: 0 10px;
 }
 .menu-nav ul li a {
+  position: relative;
   font-family: titulos;
   text-decoration: none;
   color: #D0CCB3;
   letter-spacing: 1px;
-  transition: all 0.2s ease-out;
-  background-image: linear-gradient(currentColor, currentColor);
+  transition: all 0.5s;
+  background-image: linear-gradient(currentColor, #8d323a);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size 0.5s;
+  padding-bottom: 3px;
+  top: 0px;
 }
 .menu-nav ul li a:hover, .menu-nav ul li a:focus {
-  color: #8d323a;
+  color: #e04854;
   background-size: 100% 2px;
+  top: -3px;
 }
 .menu-nav input {
   display: none;
@@ -508,11 +516,14 @@ header .images .scaling-historia {
 .espacios .contenedor-card .card-imagen #fontFrase {
   position: absolute;
   font-family: frases;
+  font-size: 2.5rem;
   color: white;
   bottom: 8%;
   left: 78%;
+  text-shadow: 0px -2px 22px rgb(0, 0, 0);
 }
 .espacios .contenedor-card .card-descripcion {
+  overflow: hidden;
   flex-direction: column;
   font-size: 1.5rem;
   display: flex;
@@ -713,6 +724,11 @@ footer .logo-derechos .derechos {
 }
 footer .logo-derechos .dev {
   font-size: small;
+}
+
+#pattern {
+  position: absolute;
+  bottom: 0;
 }
 
 h4 {
