@@ -29,7 +29,20 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   min-height: 100%;
+}
+body::before {
+  content: "";
+  width: 717px;
+  height: 900px;
+  background-image: url(../../media/labyrinth_2m2okx43yd7m.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1596px;
+  transform: rotate(45deg);
+  right: 48px;
+  z-index: 0;
 }
 body h4 {
   height: 50px;
@@ -468,6 +481,18 @@ header .images .scaling-historia {
 .espacios {
   color: gray;
 }
+.espacios::before {
+  content: "";
+  width: 717px;
+  height: 900px;
+  background-image: url(../../media/labyrinth_2m2okx43yd7m.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4596px;
+  transform: rotate(45deg);
+  right: 388px;
+  z-index: 0;
+}
 .espacios .contenedor-card {
   font-family: body;
   display: flex;
@@ -729,6 +754,19 @@ footer .logo-derechos .dev {
 #pattern {
   position: absolute;
   bottom: 0;
+}
+
+.agenda::before {
+  content: "";
+  width: 717px;
+  height: 900px;
+  background-image: url(../../media/labyrinth_2m2okx43yd7m.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 6596px;
+  transform: rotate(45deg);
+  right: 388px;
+  z-index: -1;
 }
 
 h4 {

@@ -1,6 +1,19 @@
 
 .espacios{
     color: gray;
+    &::before {
+        content: "";
+        width: 717px;
+        height: 900px;
+        background-image: url(../../media/labyrinth_2m2okx43yd7m.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 4596px;
+        transform: rotate(45deg);
+        right: 388px;
+        z-index: 0;
+    }
+    
     .contenedor-card{
         font-family: body;
         display: flex;
