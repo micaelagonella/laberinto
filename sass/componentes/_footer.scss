@@ -1,5 +1,6 @@
 
 footer{
+    
     background-color: $color-primario;
     color: $color-secundario;
     font-family: body;
@@ -168,8 +169,22 @@ footer{
             font-size: small;
         }
     }
+    &::before {
+        content: "";
+        width: 717px;
+        height: 644px;
+        background-image: url('../media/labyrinth_2m2okx43yd7m.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 200px;
+        transform: rotate(45deg);
+        right: 760px;
+        opacity: 0.03;
+        z-index: 1;
+    }
 }
 #pattern{
-    position: absolute;
-    bottom: 0;
+    top: 9214px;
+    z-index: 0;
+    opacity: .5;
 }

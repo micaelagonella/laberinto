@@ -51,7 +51,7 @@
             img{
                 height: 400px;
                 object-fit: cover;
-                box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+                border-radius: 10px;
                 @media screen and (max-width: 992px) {
                     height: 100%;
                 }
@@ -87,12 +87,18 @@
             padding: 7%;
             
             #simbol{
-                background-color: #728126;
+                color: #728126;
+                border: solid 2px #728126;
+                background-color: white;
                 border-radius: 5px;
-                color: white;
                 padding: 10px 32px;
                 align-self: start;
                 cursor: pointer;
+                &:hover{
+                    color: white;
+                    background-color: #728126;
+                    
+                }
             }
             @media screen and (max-width: 992px) {
                 height: 50vh;

@@ -53,7 +53,7 @@
 
 .historia{
     
-    
+    z-index: 1;
     color: gray;
     .contenedor-card{
         padding: 0 5%;
@@ -126,6 +126,22 @@
                     font-size: 17px;
                 }
             }
+        }
+        
+    }
+    .aldao{
+        &::before {
+            content: "";
+            width: 717px;
+            height: 900px;
+            background-image: url('../media/labyrinth_2m2okx43yd7m.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 4596px;
+            transform: rotate(45deg);
+            right: 644px;
+            opacity: 0.4;
+            z-index: -1;
         }
         
     }

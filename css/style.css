@@ -42,7 +42,8 @@ body::before {
   top: 1596px;
   transform: rotate(45deg);
   right: 48px;
-  z-index: 0;
+  opacity: 0.4;
+  z-index: -1;
 }
 body h4 {
   height: 50px;
@@ -491,6 +492,7 @@ header .images .scaling-historia {
   top: 4596px;
   transform: rotate(45deg);
   right: 388px;
+  opacity: 0.4;
   z-index: 0;
 }
 .espacios .contenedor-card {
@@ -527,7 +529,7 @@ header .images .scaling-historia {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  box-shadow: 4px 13px 30px 1px #41464b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 992px) {
   .espacios .contenedor-card .card-imagen img {
@@ -754,10 +756,24 @@ footer .logo-derechos .derechos {
 footer .logo-derechos .dev {
   font-size: small;
 }
+footer::before {
+  content: "";
+  width: 717px;
+  height: 644px;
+  background-image: url("../media/labyrinth_2m2okx43yd7m.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 200px;
+  transform: rotate(45deg);
+  right: 760px;
+  opacity: 0.03;
+  z-index: 1;
+}
 
 #pattern {
-  position: absolute;
-  bottom: 0;
+  top: 9214px;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .agenda::before {
@@ -770,6 +786,7 @@ footer .logo-derechos .dev {
   top: 6596px;
   transform: rotate(45deg);
   right: 388px;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -938,6 +955,7 @@ h4 {
 }
 
 .historia {
+  z-index: 1;
   color: gray;
 }
 .historia .contenedor-card {
@@ -1018,6 +1036,19 @@ h4 {
     font-size: 17px;
   }
 }
+.historia .aldao::before {
+  content: "";
+  width: 717px;
+  height: 900px;
+  background-image: url("../media/labyrinth_2m2okx43yd7m.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4596px;
+  transform: rotate(45deg);
+  right: 644px;
+  opacity: 0.4;
+  z-index: -1;
+}
 
 .quote {
   padding: 5% 7%;
@@ -1081,7 +1112,7 @@ h4 {
 .simbologia .contenedor-card .card-imagen img {
   height: 400px;
   object-fit: cover;
-  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.4);
+  border-radius: 10px;
 }
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card .card-imagen img {
@@ -1104,12 +1135,17 @@ h4 {
   padding: 7%;
 }
 .simbologia .contenedor-card .card-descripcion #simbol {
-  background-color: #728126;
+  color: #728126;
+  border: solid 2px #728126;
+  background-color: white;
   border-radius: 5px;
-  color: white;
   padding: 10px 32px;
   align-self: start;
   cursor: pointer;
+}
+.simbologia .contenedor-card .card-descripcion #simbol:hover {
+  color: white;
+  background-color: #728126;
 }
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card .card-descripcion {
