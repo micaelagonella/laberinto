@@ -39,6 +39,7 @@
             @media screen and (max-width: 992px) {
                 width: 100%;
                 height: 70%;
+                overflow: hidden;
             }
             img{
                 width: 100%;
@@ -51,6 +52,9 @@
                 @media screen and (max-width: 992px) {
                     height: 63vh;
                     box-shadow: none;
+                    border-radius: 0;
+                    transition: height 999999999s ease;
+                    animation: scaling 15s linear infinite alternate forwards;
                 }
             }
             h2, h3{
