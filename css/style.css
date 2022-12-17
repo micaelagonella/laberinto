@@ -530,6 +530,7 @@ header .images .scaling-historia {
   height: 100vh;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
 }
 @media screen and (max-width: 992px) {
   .espacios .contenedor-card .card-imagen img {
@@ -623,8 +624,9 @@ footer .ubicacion-contacto .contact-left .info .ubicacion h5 {
 }
 footer .ubicacion-contacto .contact-left .info .ubicacion iframe {
   width: 74%;
-  height: 100%;
-  padding-bottom: 6%;
+  border-radius: 20px;
+  /* height: 100%; */
+  margin-bottom: 6%;
 }
 footer .ubicacion-contacto .contact-left .info ul {
   list-style-type: none;
@@ -909,17 +911,30 @@ h4 {
   font-family: body;
   font-size: 1.5rem;
   color: #8d323a;
+  margin-right: 15%;
 }
 
 .color {
-  color: darkslategrey;
+  color: lightgray;
 }
 
 .intro-historia {
   display: flex;
-  background-image: none;
-  color: black;
+  background: linear-gradient(180deg, #0E0305, #0E0305, #0E0305, #0E0305, #0E0305 21%, transparent 100%);
   padding: 5%;
+}
+.intro-historia::before {
+  content: "";
+  width: 711px;
+  height: 713px;
+  background-image: url(../media/labyrinth_2m2okx43yd7m.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 442px;
+  transform: rotate(45deg);
+  right: 936px;
+  opacity: 0.1;
+  z-index: 99;
 }
 @media screen and (max-width: 772px) {
   .intro-historia {
@@ -928,7 +943,8 @@ h4 {
 }
 .intro-historia img {
   width: 50%;
-  padding: 2%;
+  border-radius: 20px;
+  box-shadow: 4px 13px 30px 1px #41464b;
 }
 @media screen and (max-width: 772px) {
   .intro-historia img {
@@ -993,6 +1009,7 @@ h4 {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  border-radius: 20px;
   box-shadow: 4px 13px 30px 1px #41464b;
 }
 @media screen and (max-width: 992px) {
@@ -1001,7 +1018,8 @@ h4 {
     box-shadow: none;
   }
 }
-.historia .contenedor-card .card-imagen h2, .historia .contenedor-card .card-imagen h3 {
+.historia .contenedor-card .card-imagen h2,
+.historia .contenedor-card .card-imagen h3 {
   transform: translate(-50%, -50%);
 }
 .historia .contenedor-card .card-imagen #fontFrase {
@@ -1112,7 +1130,7 @@ h4 {
 .simbologia .contenedor-card .card-imagen img {
   height: 400px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card .card-imagen img {
@@ -1169,6 +1187,9 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.documental iframe {
+  border-radius: 35px;
 }
 .documental h2 {
   font-family: titulos;
