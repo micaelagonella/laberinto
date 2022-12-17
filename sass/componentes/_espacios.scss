@@ -56,6 +56,10 @@
                     transition: height 999999999s ease;
                     animation: scaling 15s linear infinite alternate forwards;
                 }
+                @media screen and (max-width: 750px) {
+                    transition: height 999999999s ease;
+                    animation: scaling 15s linear infinite alternate forwards;
+                }
             }
             h2, h3{
                 transform: translate(-50%, -50%);

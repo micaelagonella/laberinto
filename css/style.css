@@ -542,6 +542,12 @@ header .images .scaling-historia {
     animation: scaling 15s linear infinite alternate forwards;
   }
 }
+@media screen and (max-width: 750px) {
+  .espacios .contenedor-card .card-imagen img {
+    transition: height 999999999s ease;
+    animation: scaling 15s linear infinite alternate forwards;
+  }
+}
 .espacios .contenedor-card .card-imagen h2, .espacios .contenedor-card .card-imagen h3 {
   transform: translate(-50%, -50%);
 }
