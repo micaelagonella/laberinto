@@ -18,7 +18,7 @@ contenedorCards.innerHTML = `<div class="col-lg-6 col-md-12 col-sm-12 card-image
 <img id="image" src="${listaPrimera[0].imagen}" alt="interrogacion">
 </div>
 <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
-<h2 class="fontTitulo">${listaPrimera[0].titulo}</h2>
+<h2 class="fontTitulo simbolTitulo">${listaPrimera[0].titulo}</h2>
 <p>${listaPrimera[0].descripcion}</p>
 <span id="simbol">${clickForSiguiente}</span>
 </div>`;
@@ -111,7 +111,7 @@ function renderizarElementos(lista) {
                   <img id="image" src="${lista[contador].imagen}" alt="interrogacion">
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 card-descripcion">
-                  <h2 class="fontTitulo">${lista[contador].titulo}</h2>
+                  <h2 class="fontTitulo simbolTitulo">${lista[contador].titulo}</h2>
                   <p>${lista[contador].descripcion}</p>
                   <span id=${claseSpan}>${clickForNext}</span>
                 </div>`;
