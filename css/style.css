@@ -45,6 +45,11 @@ body::before {
   opacity: 0.4;
   z-index: -1;
 }
+@media screen and (max-width: 992px) {
+  body::before {
+    right: 250px;
+  }
+}
 body h4 {
   height: 50px;
   position: sticky;
@@ -134,6 +139,7 @@ body .separador:after {
   .banner {
     flex-direction: column-reverse;
     height: 240vh;
+    padding: 10% 5%;
   }
 }
 .banner .p2 {
@@ -929,6 +935,11 @@ h4 {
 .color {
   color: lightgray;
 }
+@media screen and (max-width: 992px) {
+  .color {
+    padding: 22% 0;
+  }
+}
 
 .intro-historia {
   display: flex;
@@ -950,7 +961,9 @@ h4 {
 }
 @media screen and (max-width: 772px) {
   .intro-historia {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 5%;
+    background: linear-gradient(180deg, #0E0305, #8d323a 32%, transparent 100%);
   }
 }
 .intro-historia img {
@@ -999,6 +1012,7 @@ h4 {
 @media screen and (max-width: 992px) {
   .historia .contenedor-card {
     height: 91h;
+    flex-direction: column-reverse;
   }
 }
 .historia .contenedor-card:nth-child(even) .card-descripcion {
@@ -1034,6 +1048,9 @@ h4 {
     box-shadow: none;
   }
 }
+.historia .contenedor-card .card-imagen #image2 {
+  display: none;
+}
 .historia .contenedor-card .card-imagen h2,
 .historia .contenedor-card .card-imagen h3 {
   transform: translate(-50%, -50%);
@@ -1061,7 +1078,7 @@ h4 {
 }
 @media screen and (max-width: 992px) {
   .historia .contenedor-card .card-descripcion {
-    padding: 4%;
+    padding: 0%;
   }
   .historia .contenedor-card .card-descripcion #fontTitulo {
     font-size: 24px;

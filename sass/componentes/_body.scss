@@ -28,6 +28,9 @@ body {
         right: 48px;
         opacity: 0.4;
         z-index: -1;
+        @media screen and (max-width: 992px) {
+            right: 250px;
+        }
     }
     h4{
         height: 50px;
