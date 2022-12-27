@@ -12,6 +12,7 @@
     
     color: gray;
     background: #1F1F1F;
+    height: calc(100vh - 50px);
     
     .contenedor-card{
         flex-wrap: nowrap;
@@ -128,7 +129,7 @@
     align-items: center;
     justify-content: center;
     iframe{
-        border-radius: 35px;
+        border-radius: 20px;
     }
     h2{
         font-family: titulos;

@@ -28,10 +28,6 @@ html {
   height: 100%;
 }
 
-body {
-  overflow-x: hidden;
-  min-height: 100%;
-}
 body::before {
   content: "";
   width: 717px;
@@ -502,6 +498,7 @@ header .images .scaling-historia {
   z-index: 0;
 }
 .espacios .contenedor-card {
+  padding: 0 5%;
   font-family: body;
   display: flex;
   --bs-gutter-x: none;
@@ -1126,6 +1123,7 @@ h4 {
 .simbologia {
   color: gray;
   background: #1F1F1F;
+  height: calc(100vh - 50px);
 }
 .simbologia .contenedor-card {
   flex-wrap: nowrap;
@@ -1228,7 +1226,7 @@ h4 {
   justify-content: center;
 }
 .documental iframe {
-  border-radius: 35px;
+  border-radius: 20px;
 }
 .documental h2 {
   font-family: titulos;
