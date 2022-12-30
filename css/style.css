@@ -502,6 +502,7 @@ header .images .scaling-historia {
   z-index: 0;
 }
 .espacios .contenedor-card {
+  margin: 2.5rem 0;
   padding: 0 5%;
   font-family: body;
   display: flex;
