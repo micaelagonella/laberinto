@@ -568,6 +568,12 @@ header .images .scaling-historia {
   left: 78%;
   text-shadow: 0px -2px 22px rgb(0, 0, 0);
 }
+@media screen and (max-width: 992px) {
+  .espacios .contenedor-card .card-imagen #fontFrase {
+    bottom: 0%;
+    left: 73%;
+  }
+}
 .espacios .contenedor-card .card-descripcion {
   overflow: hidden;
   flex-direction: column;
