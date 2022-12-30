@@ -28,6 +28,10 @@ html {
   height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+  left: 0;
+}
 body::before {
   content: "";
   width: 717px;
@@ -193,7 +197,7 @@ body .separador:after {
   transition: all 0.2s;
 }
 .menu-nav .social a i:hover {
-  color: #e04854;
+  color: #fff;
   transform: scale(1.1);
 }
 .menu-nav .social img {
@@ -525,7 +529,7 @@ header .images .scaling-historia {
 @media screen and (max-width: 992px) {
   .espacios .contenedor-card .card-imagen {
     width: 100%;
-    height: 70%;
+    height: 50vh;
     overflow: hidden;
   }
 }
@@ -580,7 +584,7 @@ header .images .scaling-historia {
 }
 @media screen and (max-width: 992px) {
   .espacios .contenedor-card .card-descripcion {
-    padding: 6%;
+    padding: 6% 0;
   }
   .espacios .contenedor-card .card-descripcion #fontTitulo {
     font-size: 24px;
@@ -1123,7 +1127,6 @@ h4 {
 .simbologia {
   color: gray;
   background: #1F1F1F;
-  height: calc(100vh - 50px);
 }
 .simbologia .contenedor-card {
   flex-wrap: nowrap;
