@@ -33,6 +33,7 @@
                 align-items: start;
                 //en las pares el texto se va a acomodar a la izq
                 order: -1;
+                z-index: 99;
                 @media screen and (max-width: 992px) {
                     order: inherit;
                 }

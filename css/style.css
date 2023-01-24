@@ -1152,6 +1152,7 @@ h4 {
 .simbologia .contenedor-card:nth-child(even) .card-descripcion {
   align-items: start;
   order: -1;
+  z-index: 99;
 }
 @media screen and (max-width: 992px) {
   .simbologia .contenedor-card:nth-child(even) .card-descripcion {
